@@ -8,6 +8,11 @@ Start a simple HTTP Server with Python:
 + Python 2: `python -m SimpleHTTPServer 8000`
 + Python 3: `python -m http.server 8000`
 
+## Version-Control System
+### Git
+Undo last commit:  
+`git reset --soft HEAD~1`
+
 ------------------
 
 # License

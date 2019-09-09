@@ -1,0 +1,1 @@
+Useful resource to be used along with [Notepad++](https://notepad-plus-plus.org/).

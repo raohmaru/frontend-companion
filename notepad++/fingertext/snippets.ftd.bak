@@ -1,0 +1,1409 @@
+time
+GLOBAL
+$[![(key)TIME:HH:mm:ss]!][>END<]!$[FingerTextData FingerTextData]@#
+shebang
+GLOBAL
+#!/usr/bin/env[>END<]!$[FingerTextData FingerTextData]@#
+lorem
+GLOBAL
+Lorem ipsum dolor sit amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse, aliquam ipsum ante morbi sed ipsum mollis. Sollicitudin viverra, vel varius eget sit mollis. Commodo enim aliquam suspendisse tortor cum diam, commodo facilisis, rutrum et duis nisl porttitor, vel eleifend odio ultricies ut, orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero. Etiam vestibulum at lectus.
+Donec vivamus. Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent, pede etiam. Tempor vestibulum turpis id ligula mi mattis. Eget arcu vitae mauris amet odio. Diam nibh diam, quam elit, libero nostra ut. Pellentesque vehicula. Eget sed, dapibus magna nulla nonummy commodo accumsan morbi, praesent volutpat vel id maecenas, morbi habitant sem in adipiscing mi erat, malesuada pretium tortor rutrum eu eros vel. Donec molestie, faucibus a amet commodo scelerisque libero massa. Sapien quam in eu vel nulla.
+Iaculis et dui ullamcorper, non egestas condimentum dui phasellus. Sit non mattis a, leo in imperdiet erat nec pulvinar. Ornare massa justo cursus, convallis mauris interdum felis. Felis posuere metus, ornare pede montes, morbi urna sed temporibus non, nibh inceptos enim turpis natoque ac praesent. Litora vivamus veritatis vel nonummy, ut qui est pellentesque at alias, sed condimentum dapibus.
+Rhoncus lacinia. Imperdiet nulla sem fringilla, purus enim amet, nascetur faucibus, adipiscing neque ut bibendum, at felis nec in. Mauris ultricies, et pede id potenti in nec, mi elit rhoncus ligula, mollis lacus congue scelerisque magna. Ultrices risus elit lectus nunc blandit quis, magna enim ipsum, nostra leo vestibulum quis nibh arcu sed. Amet a sagittis fringilla, massa vitae rhoncus, a magna curabitur in.[>END<]!$[FingerTextData FingerTextData]@#
+filename
+GLOBAL
+$[![(key)FILENAME]!]$[![(key)EXTNAME]!][>END<]!$[FingerTextData FingerTextData]@#
+exec
+GLOBAL
+$[![(run)$[![{type a command (e.g. dir) and hit TAB}]!]]!][>END<]!$[FingerTextData FingerTextData]@#
+evaluate
+GLOBAL
+$[![(eva)$[![{type a math expression (e.g. 1+1) and hit TAB}]!]]!][>END<]!$[FingerTextData FingerTextData]@#
+directory
+GLOBAL
+$[![(key)DIRECTORY]!][>END<] !$[FingerTextData FingerTextData]@#
+date
+GLOBAL
+$[![(key)DATE:dd/MM/yyyy]!][>END<]!$[FingerTextData FingerTextData]@#
+xml
+Ext:xml
+<?xml version="1.0" encoding="UTF-8"?>$[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+tagc
+Ext:xml
+<$[![tagname]!] />[>END<]!$[FingerTextData FingerTextData]@#
+tag
+Ext:xml
+<$[![tagname]!]>$[0[]0]</$[![tagname]!]>[>END<]!$[FingerTextData FingerTextData]@#
+cdata
+Ext:xml
+<![CDATA[
+  $[![]!]
+]]>[>END<]!$[FingerTextData FingerTextData]@#
+times
+Ext:rb
+times do |$[![i]!]|
+  $[1[(key)SELECTION]1]$[![]!]
+end[>END<]!$[FingerTextData FingerTextData]@#
+shebang
+Ext:rb
+#!/usr/bin/env ruby$[![]!][>END<]!$[FingerTextData FingerTextData]@#
+rescuelog
+Ext:rb
+begin
+  $[![]!]
+rescue Exception => e
+  File.open("exception.log") do |f|
+    f.puts e.inspect
+    f.puts e.backtrace
+  end
+end[>END<]!$[FingerTextData FingerTextData]@#
+rescue
+Ext:rb
+begin
+  $[![]!]
+rescue Exception => e
+  p e.inspect
+  p e.backtrace
+end[>END<]!$[FingerTextData FingerTextData]@#
+raise
+Ext:rb
+raise "$[![Error!]!]"[>END<]!$[FingerTextData FingerTextData]@#
+lambda
+Ext:rb
+lambda do |$[![e]!]|
+  $[1[(key)SELECTION]1]$[![]!]
+end[>END<]!$[FingerTextData FingerTextData]@#
+if
+Ext:rb
+if $[![{condition}]!]
+  $[![{body1}]!]
+else
+  $[![{body2}]!]
+end[>END<]!$[FingerTextData FingerTextData]@#
+for
+Ext:rb
+for $[![i]!] in $[![0]!]..$[![5]!] do
+  $[![]!]
+end[>END<]!$[FingerTextData FingerTextData]@#
+flash
+Ext:rb
+flash[:$[![notice]!]] = "$[![(content)]!]"[>END<]!$[FingerTextData FingerTextData]@#
+exceptionlog
+Ext:rb
+begin
+  $[![]!]
+rescue Exception => e
+  File.open("exception.log") do |f|
+    f.puts e.inspect
+    f.puts e.backtrace
+  end
+end[>END<]!$[FingerTextData FingerTextData]@#
+each
+Ext:rb
+each do |$[![i]!]|
+  $[1[(key)SELECTION]1]$[![]!]
+end[>END<]!$[FingerTextData FingerTextData]@#
+do
+Ext:rb
+do |$[![i]!]|
+  $[1[(key)SELECTION]1]$[![]!]
+end[>END<]!$[FingerTextData FingerTextData]@#
+dir
+Ext:rb
+File.dirname(__FILE__)[>END<]!$[FingerTextData FingerTextData]@#
+def
+Ext:rb
+def $[![{method name}]!]$[![]!]
+  $[1[(key)SELECTION]1]$[![]!]
+end[>END<]!$[FingerTextData FingerTextData]@#
+case
+Ext:rb
+case $[![{object}]!]
+when $[![{condition1}]!]
+  $[![{body1}]!]
+when $[![{condition2}]!]
+  $[![{body2}]!]
+else
+  $[![{default}]!]
+end[>END<]!$[FingerTextData FingerTextData]@#
+alias
+Ext:rb
+alias_method :$[![{new name}]!], :$[![{old name}]!][>END<]!$[FingerTextData FingerTextData]@#
+aa
+Ext:rb
+attr_accessor :$[![{attr name}]!][>END<]!$[FingerTextData FingerTextData]@#
+switch
+Ext:php
+switch($[![expression]!]) {
+	case $[![expression1]!]:
+		$[0[]0]
+		break;
+	default:
+		$[0[]0];
+}[>END<]!$[FingerTextData FingerTextData]@#
+include
+Ext:php
+include("$[![file.php]!]");[>END<]!$[FingerTextData FingerTextData]@#
+fork
+Ext:php
+foreach($arr_or_obj as $key => $value)
+{
+	$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+fore
+Ext:php
+foreach($arr_or_obj as $item)
+{
+	$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+for
+Ext:php
+for($i = 1; $i <= $[![length]!]; $i++)
+{
+	$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+echo
+Ext:php
+echo "$[![Hello World!]!]";[>END<]!$[FingerTextData FingerTextData]@#
+_e
+Ext:php
+<?php _e('$[![(key)SELECTION]!]$[0[]0]') ?>[>END<]!$[FingerTextData FingerTextData]@#
+write
+Ext:js
+document.write("$[![<p>Hello World</p>]!]");[>END<]!$[FingerTextData FingerTextData]@#
+var
+Ext:js
+var $[![x]!] = $[![]!];[>END<]!$[FingerTextData FingerTextData]@#
+try
+Ext:js
+try {
+	$[![throw "myException";]!]
+}
+catch (e) {
+	$[![console.log(e);]!]
+}$[![
+catch (e if e instanceof RangeError) {
+	
+}]!]$[![
+finally {
+	
+}]!][>END<]!$[FingerTextData FingerTextData]@#
+switch
+Ext:js
+switch ($[![expression]!]) {
+	case $[![expression1]!]:
+		$[0[]0]
+		break;
+	default:
+		$[0[]0];
+}[>END<]!$[FingerTextData FingerTextData]@#
+singleton
+Ext:js
+var $[![name]!] = (function() {
+	'use strict';
+
+	var instance;
+
+	$[![name]!] = function(${2:args})
+	{
+		if (instance)
+			return instance;
+
+		instance = this;
+
+		$[0[]0]
+	};
+
+	return $[![name]!];
+
+}());
+[>END<]!$[FingerTextData FingerTextData]@#
+setter
+Ext:js
+set $[![(key)SELECTION]!]$[![property]!]($[![value]!]) {
+	this._$[![(key)SELECTION]!]$[![property]!] = $[![value]!];$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+module
+Ext:js
+var $[![moduleName]!] = (function() {
+	'use strict';
+
+	var $[![moduleName]!] = {
+		init: {
+			$[0[]0]
+		}
+	};
+
+	return $[![moduleName]!];
+
+}());
+[>END<]!$[FingerTextData FingerTextData]@#
+log
+Ext:js
+console.log($[![(key)SELECTION]!]$[0[]0]);[>END<]!$[FingerTextData FingerTextData]@#
+jsdoc
+Ext:js
+/**
+ * $[![Description]!]
+ * @$[![constructor]!]
+ * @param {$[![type]!]} $[![var]!] - $[![param descr]!]
+ */[>END<]!$[FingerTextData FingerTextData]@#
+info
+Ext:js
+console.info($[![(key)SELECTION]!]$[0[]0]);[>END<]!$[FingerTextData FingerTextData]@#
+import
+Ext:js
+import $[![(opt)defaultExport|* as name|{ export }]!] from '$[![./path/to/file.js]!]';[>END<]!$[FingerTextData FingerTextData]@#
+ifelse
+Ext:js
+if($[![{condition}]!]) {
+	$[![]!]
+} else {
+	$[![]!]
+}
+[>END<]!$[FingerTextData FingerTextData]@#
+if
+Ext:js
+if($[![{condition}]!]) {
+	$[![]!]
+}
+[>END<]!$[FingerTextData FingerTextData]@#
+gid
+Ext:js
+document.getElementById("$[![some_id]!]")$[![]!][>END<]!$[FingerTextData FingerTextData]@#
+getter
+Ext:js
+get $[![(key)SELECTION]!]$[![property]!]() {
+	return this._$[![(key)SELECTION]!]$[![property]!];$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+fun
+Ext:js
+function $[![function_name]!]($[![param]!]) {
+	$[![]!];
+}
+[>END<]!$[FingerTextData FingerTextData]@#
+forof
+Ext:js
+for(let $[![o]!] of $[![Things]!]) {
+	$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+forim
+Ext:js
+for(let $[![i]!]=0, len=$[![Things]!].length; $[![i]!]<len; $[![i]!]++) {
+	$[![Things]!][$[![i]!]];$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+fori
+Ext:js
+for(let $[![prop]!] in $[![object]!]) {
+	if (Object.prototype.hasOwnProperty($[![object]!], $[![prop]!])) {
+		$[![object]!][$[![prop]!]];$[0[]0]
+	}
+}[>END<]!$[FingerTextData FingerTextData]@#
+for
+Ext:js
+for(let $[![i]!]=0; $[![i]!]<$[![Things]!].length; $[![i]!]++) {
+	$[![Things]!][$[![i]!]];$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+eprev
+Ext:js
+$[![e]!].preventDefault();[>END<]!$[FingerTextData FingerTextData]@#
+constructor
+Ext:js
+var $[![ConstructorName]!] = (function() {
+	'use strict';
+
+	function $[![ConstructorName]!]($[![args]!])
+	{
+		// enforces new
+		if (!(this instanceof $[![ConstructorName]!]))
+			return new $[![ConstructorName]!]($[![args]!]);
+		
+		// constructor body
+		
+	}
+
+	$[![ConstructorName]!].prototype.$[![methodName]!] = function()
+	{
+		// method body
+		$[0[]0]
+	};
+
+	return $[![ConstructorName]!];
+
+}());
+[>END<]!$[FingerTextData FingerTextData]@#
+console
+Ext:js
+console.$[![(opt)log|info|warn|error|assert|trace|table|count|countReset|group|groupCollapsed|groupEnd|profile|profileEnd|time|timeEnd|timeLog|timeStamp]!]($[![(key)SELECTION]!]$[0[]0]);[>END<]!$[FingerTextData FingerTextData]@#
+class
+Ext:js
+$[![export default ]!]class $[![ClassName]!]$[![extends OtherClassName]!] {
+	constructor() {
+		$[0[]0]
+	}
+	
+	get property() {
+		return this._property;
+	}
+	
+	set property(value) {
+		this._property = value;
+	}
+
+	method() {
+	}
+}
+[>END<]!$[FingerTextData FingerTextData]@#
+alert
+Ext:js
+window.alert("$[![Hello World!]!]");[>END<]!$[FingerTextData FingerTextData]@#
+afun
+Ext:js
+;(function () {
+	'use strict';
+
+	$[0[]0]
+}());
+[>END<]!$[FingerTextData FingerTextData]@#
+wbr
+Ext:html
+<wbr>[>END<]!$[FingerTextData FingerTextData]@#
+video
+Ext:html
+<video src="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</video>[>END<]!$[FingerTextData FingerTextData]@#
+ul
+Ext:html
+<ul>
+	<li>$[![item]!]</li>
+</ul>[>END<]!$[FingerTextData FingerTextData]@#
+u
+Ext:html
+<u>$[![(key)SELECTION]!]$[0[]0]</u>[>END<]!$[FingerTextData FingerTextData]@#
+txta
+Ext:html
+<textarea name="$[![]!]" id="$[![]!]"$[![ cols="30" rows="10"]!]>$[![(key)SELECTION]!]$[0[]0]</textarea>[>END<]!$[FingerTextData FingerTextData]@#
+trg
+Ext:html
+target="$[![(lis)_blank|_parent|_top|_self|]!]$[0[]0]"[>END<]!$[FingerTextData FingerTextData]@#
+tr
+Ext:html
+<tr>$[![(key)SELECTION]!]$[0[]0]</tr>[>END<]!$[FingerTextData FingerTextData]@#
+title
+Ext:html
+<title>$[![(key)SELECTION]!]$[0[]0]</title>[>END<][>END<]!$[FingerTextData FingerTextData]@#
+thead
+Ext:html
+<thead>
+	<tr>
+		<th>$[![Header]!]</th>
+	</tr>
+</thead>[>END<]!$[FingerTextData FingerTextData]@#
+th
+Ext:html
+<th>$[![(key)SELECTION]!]$[0[]0]</th>[>END<]!$[FingerTextData FingerTextData]@#
+tfooter
+Ext:html
+<tfooter>
+	$[![(key)SELECTION]!]
+</tfooter>[>END<]!$[FingerTextData FingerTextData]@#
+tf
+Ext:html
+<input type="text" name="$[![{some name}]!]" value="$[![{some value}]!]" />[>END<]!$[FingerTextData FingerTextData]@#
+textarea
+Ext:html
+<textarea name="$[![]!]" id="$[![]!]"$[![ cols="30" rows="10"]!]>$[![(key)SELECTION]!]$[0[]0]</textarea>[>END<]!$[FingerTextData FingerTextData]@#
+td
+Ext:html
+<td>$[![(key)SELECTION]!]$[0[]0]</td>[>END<]!$[FingerTextData FingerTextData]@#
+tbody
+Ext:html
+<tbody>
+	$[![(key)SELECTION]!]
+</tbody>[>END<]!$[FingerTextData FingerTextData]@#
+tagc
+Ext:html
+<$[![tagname]!] />[>END<]!$[FingerTextData FingerTextData]@#
+tag
+Ext:html
+<$[![tagname]!]>$[![(key)SELECTION]!]$[0[]0]</$[![tagname]!]>[>END<]!$[FingerTextData FingerTextData]@#
+table
+Ext:html
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<th>$[![Header]!]</th>
+	</tr>
+	<tr>
+		<td>$[![cell]!]</td>
+	</tr>
+</table>[>END<]!$[FingerTextData FingerTextData]@#
+sup
+Ext:html
+<sup>$[![(key)SELECTION]!]$[0[]0]</sup>[>END<]!$[FingerTextData FingerTextData]@#
+submit
+Ext:html
+<input type="submit" value="$[![Submit]!]" />[>END<]!$[FingerTextData FingerTextData]@#
+sub
+Ext:html
+<sub>$[![(key)SELECTION]!]$[0[]0]</sub>[>END<]!$[FingerTextData FingerTextData]@#
+style
+Ext:html
+<style>
+$[![(key)SELECTION]!]$[0[]0]
+</style>[>END<]!$[FingerTextData FingerTextData]@#
+strong
+Ext:html
+<strong>$[![(key)SELECTION]!]$[0[]0]</strong>[>END<]!$[FingerTextData FingerTextData]@#
+src
+Ext:html
+<source>$[![(key)SELECTION]!]$[0[]0]</source>[>END<]!$[FingerTextData FingerTextData]@#
+span
+Ext:html
+<span>$[![(key)SELECTION]!]$[0[]0]</span>[>END<]!$[FingerTextData FingerTextData]@#
+small
+Ext:html
+<small>$[![(key)SELECTION]!]$[0[]0]</small>[>END<]!$[FingerTextData FingerTextData]@#
+select
+Ext:html
+<select name="$[![]!]" id="$[![]!]">
+	<option value="$[![]!]">$[0[]0]</option>
+</select>[>END<]!$[FingerTextData FingerTextData]@#
+section
+Ext:html
+<section>$[![(key)SELECTION]!]$[0[]0]</section>[>END<]!$[FingerTextData FingerTextData]@#
+sec
+Ext:html
+<section>$[![(key)SELECTION]!]$[0[]0]</section>[>END<]!$[FingerTextData FingerTextData]@#
+scrsrc
+Ext:html
+<script src="$[![path/to/file]!].js"></script>[>END<]!$[FingerTextData FingerTextData]@#
+script
+Ext:html
+$[![(lis)<script>
+$[![(key)SELECTION]!]$[0[]0]
+</script>|<script src="$[0[]0]"></script>]!][>END<]!$[FingerTextData FingerTextData]@#
+samp
+Ext:html
+<samp>$[![(key)SELECTION]!]$[0[]0]</samp>[>END<]!$[FingerTextData FingerTextData]@#
+prog
+Ext:html
+<progress>$[![(key)SELECTION]!]$[0[]0]</progress>[>END<]!$[FingerTextData FingerTextData]@#
+pre
+Ext:html
+<pre>$[![(key)SELECTION]!]$[0[]0]</pre>[>END<]!$[FingerTextData FingerTextData]@#
+php
+Ext:html
+<?php $[0[]0] ?>[>END<]!$[FingerTextData FingerTextData]@#
+param
+Ext:html
+<param name="$[0[]0]" value="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+p
+Ext:html
+<p>$[![(key)SELECTION]!]$[0[]0]</p>[>END<]!$[FingerTextData FingerTextData]@#
+output
+Ext:html
+<output for="$[0[]0]" name="$[0[]0]">$[0[0]0]</output>[>END<]!$[FingerTextData FingerTextData]@#
+out
+Ext:html
+<output>$[![(key)SELECTION]!]$[0[]0]</output>[>END<]!$[FingerTextData FingerTextData]@#
+option
+Ext:html
+<option value="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</option>[>END<]!$[FingerTextData FingerTextData]@#
+optg
+Ext:html
+<optgroup>
+	<option value="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</option>
+</optgroup>[>END<]!$[FingerTextData FingerTextData]@#
+opt
+Ext:html
+<option value="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</option>[>END<]!$[FingerTextData FingerTextData]@#
+ol
+Ext:html
+<ol>
+	<li>$[![item]!]</li>
+</ol>[>END<]!$[FingerTextData FingerTextData]@#
+object
+Ext:html
+<object data="$[0[]0]" type="$[0[]0]">$[![(key)SELECTION]!]$[0[]0]</object>[>END<]!$[FingerTextData FingerTextData]@#
+obj
+Ext:html
+<object data="$[![]!]" type="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</object>[>END<]!$[FingerTextData FingerTextData]@#
+noscript
+Ext:html
+<noscript>$[![Your browser does not support JavaScript!]!]$[0[]0]</noscript>[>END<]!$[FingerTextData FingerTextData]@#
+nbsp
+Ext:html
+&nbsp;[>END<]!$[FingerTextData FingerTextData]@#
+nb
+Ext:html
+&nbsp;[>END<]!$[FingerTextData FingerTextData]@#
+nav
+Ext:html
+<nav></nav>[>END<]!$[FingerTextData FingerTextData]@#
+meta
+Ext:html
+$[![(lis)<meta />|<meta charset="utf-8">|<meta name="description" content="$[0[]0]">|<meta name="keywords" content="$[0[]0]">|<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />|<meta http-equiv="X-UA-Compatible" content="IE=7" />]!][>END<]!$[FingerTextData FingerTextData]@#
+menu
+Ext:html
+<menu type="$[![(lis)context|toolbar]!]">$[![(key)SELECTION]!]$[0[]0]</menu>[>END<]!$[FingerTextData FingerTextData]@#
+map
+Ext:html
+<map name="$[![]!]">
+	 <area shape="$[![(lis)default|circle|rect|poly]!]" coords="$[![]!]" href="$[![]!]" alt="$[![]!]" />$[![(key)SELECTION]!]$[0[]0]
+</map>[>END<]!$[FingerTextData FingerTextData]@#
+main
+Ext:html
+<main role="main">$[![(key)SELECTION]!]$[0[]0]</main>[>END<]!$[FingerTextData FingerTextData]@#
+link
+Ext:html
+$[![(lis)<link rel="stylesheet" href="$[0[]0]" />|<link rel="stylesheet" href="style.css" />|<link rel="stylesheet" href="print.css" media="print" />|<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />|<link rel="apple-touch-icon" href="favicon.png" />|<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml" />|<link rel="alternate" type="application/atom+xml" title="Atom" href="atom.xml" />]!][>END<]!$[FingerTextData FingerTextData]@#
+li
+Ext:html
+<li>$[![(key)SELECTION]!]$[0[]0]</li>[>END<]!$[FingerTextData FingerTextData]@#
+leg
+Ext:html
+<legend>$[![(key)SELECTION]!]$[0[]0]</legend>[>END<]!$[FingerTextData FingerTextData]@#
+label
+Ext:html
+<label for="$[0[]0]">$[![(key)SELECTION]!]$[0[]0]</label>[>END<]!$[FingerTextData FingerTextData]@#
+kg
+Ext:html
+<keygen />[>END<]!$[FingerTextData FingerTextData]@#
+keygen
+Ext:html
+<keygen />[>END<]!$[FingerTextData FingerTextData]@#
+kbd
+Ext:html
+<kbd>$[![(key)SELECTION]!]$[0[]0]</kbd>[>END<]!$[FingerTextData FingerTextData]@#
+isindex
+Ext:html
+<isindex />[>END<]!$[FingerTextData FingerTextData]@#
+ins
+Ext:html
+<ins>$[![(key)SELECTION]!]$[0[]0]</ins>[>END<]!$[FingerTextData FingerTextData]@#
+input
+Ext:html
+<input type="$[![(lis)text|password|checkbox|radio|file|submit|reset|image|button|hidden|search|email|url|datetime|date|datetime-local|month|week|time|number|color|range]!]" name="$[![]!]" id="$[![]!]" value="$[![]!]" />[>END<]!$[FingerTextData FingerTextData]@#
+inp
+Ext:html
+<input type="$[![(lis)text|password|checkbox|radio|file|submit|reset|image|button|hidden|search|email|url|datetime|date|datetime-local|month|week|time|number|color|range]!]" name="$[![]!]" id="$[![]!]" value="$[![]!]" />[>END<]!$[FingerTextData FingerTextData]@#
+img
+Ext:html
+<img src="$[0[]0]" alt="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+iframe
+Ext:html
+<iframe src="$[0[]0]" frameborder="0">$[![(key)SELECTION]!]$[0[]0]</iframe>[>END<]!$[FingerTextData FingerTextData]@#
+ifr
+Ext:html
+<iframe src="$[![]!]" frameborder="0">$[![(key)SELECTION]!]$[0[]0]</iframe>[>END<]!$[FingerTextData FingerTextData]@#
+id
+Ext:html
+id="$[![some_id]!]"[>END<]!$[FingerTextData FingerTextData]@#
+i
+Ext:html
+<i>$[![(key)SELECTION]!]$[0[]0]</i>[>END<]!$[FingerTextData FingerTextData]@#
+html
+Ext:html
+<!doctype html>
+<html lang="$[0[]0]">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>$[0[]0]</title>
+	<meta name="description" content="$[0[]0]">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>[>END<]!$[FingerTextData FingerTextData]@#
+href
+Ext:html
+href="$[![(lis)http://|//|mailto:|javascript:|]!]$[0[]0]"[>END<]!$[FingerTextData FingerTextData]@#
+hr
+Ext:html
+<hr />[>END<]!$[FingerTextData FingerTextData]@#
+header
+Ext:html
+<header role="banner">$[![(key)SELECTION]!]$[0[]0]</header>[>END<]!$[FingerTextData FingerTextData]@#
+head
+Ext:html
+<head>$[0[]0]</head>[>END<]!$[FingerTextData FingerTextData]@#
+hdr
+Ext:html
+<header>$[![(key)SELECTION]!]$[0[]0]</header>[>END<]!$[FingerTextData FingerTextData]@#
+h6
+Ext:html
+<h6>$[![(key)SELECTION]!]$[0[]0]</h6>[>END<]!$[FingerTextData FingerTextData]@#
+h5
+Ext:html
+<h5>$[![(key)SELECTION]!]$[0[]0]</h5>[>END<]!$[FingerTextData FingerTextData]@#
+h4
+Ext:html
+<h4>$[![(key)SELECTION]!]$[0[]0]</h4>[>END<]!$[FingerTextData FingerTextData]@#
+h3
+Ext:html
+<h3>$[![(key)SELECTION]!]$[0[]0]</h3>[>END<]!$[FingerTextData FingerTextData]@#
+h2
+Ext:html
+<h2>$[![(key)SELECTION]!]$[0[]0]</h2>[>END<]!$[FingerTextData FingerTextData]@#
+h1
+Ext:html
+<h1>$[![(key)SELECTION]!]$[0[]0]</h1>[>END<]!$[FingerTextData FingerTextData]@#
+ftr
+Ext:html
+<footer>$[![(key)SELECTION]!]$[0[]0]</footer>[>END<]!$[FingerTextData FingerTextData]@#
+fset
+Ext:html
+<fieldset>$[![(key)SELECTION]!]$[0[]0]</fieldset>[>END<]!$[FingerTextData FingerTextData]@#
+frame
+Ext:html
+<frame />[>END<]!$[FingerTextData FingerTextData]@#
+form
+Ext:html
+<form action="$[0[]0]" method="$[![(lis)get|post]!]" $[![enctype="multipart/form-data"]!] role="form">
+	$[![(key)SELECTION]!]$[0[]0]
+</form>[>END<]!$[FingerTextData FingerTextData]@#
+footer
+Ext:html
+<footer role="contentinfo">$[![(key)SELECTION]!]$[0[]0]</footer>[>END<]!$[FingerTextData FingerTextData]@#
+figc
+Ext:html
+<figcaption>$[![(key)SELECTION]!]$[0[]0]</figcaption>[>END<]!$[FingerTextData FingerTextData]@#
+fig
+Ext:html
+<figure>$[![(key)SELECTION]!]$[0[]0]</figure>[>END<]!$[FingerTextData FingerTextData]@#
+embed
+Ext:html
+<embed src="$[0[]0]" type="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+emb
+Ext:html
+<embed src="$[![]!]" type="$[![]!]" />[>END<]!$[FingerTextData FingerTextData]@#
+em
+Ext:html
+<em>$[![(key)SELECTION]!]$[0[]0]</em>[>END<]!$[FingerTextData FingerTextData]@#
+doctype
+Ext:html
+<!DOCTYPE $[![(lis)html|html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"|html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"|html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"|html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"|html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"|html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"]!]>
+$[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+doc
+Ext:html
+<!doctype html>
+<html lang="$[![en]!]">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>$[![title]!]</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="$[![description]!]">
+	
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	$[0[]0]
+	
+	<script src="js/main.js" defer></script>
+</body>
+</html>[>END<]!$[FingerTextData FingerTextData]@#
+dlg
+Ext:html
+<dialog>$[![(key)SELECTION]!]$[0[]0]</dialog>[>END<]!$[FingerTextData FingerTextData]@#
+dl
+Ext:html
+<dl>
+	<dt>$[![term]!]</dt>
+	<dd>$[![definition]!]</dd>
+</dl>[>END<]!$[FingerTextData FingerTextData]@#
+div
+Ext:html
+<div class="$[0[]0]">$[![(key)SELECTION]!]$[0[]0]</div>[>END<]!$[FingerTextData FingerTextData]@#
+dfn
+Ext:html
+<dfn>$[![(key)SELECTION]!]$[0[]0]</dfn>[>END<]!$[FingerTextData FingerTextData]@#
+det
+Ext:html
+<details>$[![(key)SELECTION]!]$[0[]0]</details>[>END<]!$[FingerTextData FingerTextData]@#
+del
+Ext:html
+<del>$[![(key)SELECTION]!]$[0[]0]</del>[>END<]!$[FingerTextData FingerTextData]@#
+datal
+Ext:html
+<datalist>$[![(key)SELECTION]!]$[0[]0]</datalist>[>END<]!$[FingerTextData FingerTextData]@#
+datag
+Ext:html
+<datagrid>$[![(key)SELECTION]!]$[0[]0]</datagrid>[>END<]!$[FingerTextData FingerTextData]@#
+comment
+Ext:html
+<!-- $[![(key)SELECTION]!]$[0[]0] -->[>END<]!$[FingerTextData FingerTextData]@#
+command
+Ext:html
+<command />[>END<]!$[FingerTextData FingerTextData]@#
+colg
+Ext:html
+<colgroup>
+	<col $[![span="1" ]!]class="$[![]!]" />$[![(key)SELECTION]!]$[0[]0]
+</colgroup>[>END<]!$[FingerTextData FingerTextData]@#
+col
+Ext:html
+<col $[![span="1" ]!]class="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+code
+Ext:html
+<code>$[![(key)SELECTION]!]$[0[]0]</code>[>END<]!$[FingerTextData FingerTextData]@#
+cmd
+Ext:html
+<command />[>END<]!$[FingerTextData FingerTextData]@#
+cite
+Ext:html
+<cite>$[![(key)SELECTION]!]$[0[]0]</cite>[>END<]!$[FingerTextData FingerTextData]@#
+caption
+Ext:html
+<caption>$[![(key)SELECTION]!]$[0[]0]</caption>[>END<]!$[FingerTextData FingerTextData]@#
+cap
+Ext:html
+<caption>$[![(key)SELECTION]!]$[0[]0]</caption>[>END<]!$[FingerTextData FingerTextData]@#
+canvas
+Ext:html
+<canvas width="$[![800]!]" height="$[![600]!]" id="$[![canvas]!]"></canvas>[>END<]!$[FingerTextData FingerTextData]@#
+button
+Ext:html
+<input type="button" value="$[![]!]" />$[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+btn
+Ext:html
+<button type="$[![(lis)button|reset|submit]!]">$[![(key)SELECTION]!]$[0[]0]</button>[>END<]!$[FingerTextData FingerTextData]@#
+br
+Ext:html
+<br>[>END<]!$[FingerTextData FingerTextData]@#
+bq
+Ext:html
+<blockquote>$[![(key)SELECTION]!]$[0[]0]</blockquote>[>END<]!$[FingerTextData FingerTextData]@#
+bdo
+Ext:html
+<bdo dir="$[![(lis)rtl|ltr]!]">$[![(key)SELECTION]!]$[0[]0]</bdo>[>END<]!$[FingerTextData FingerTextData]@#
+basefont
+Ext:html
+<basefont />[>END<]!$[FingerTextData FingerTextData]@#
+base
+Ext:html
+<base href="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+b
+Ext:html
+<b>$[![(key)SELECTION]!]$[0[]0]</b>[>END<]!$[FingerTextData FingerTextData]@#
+audio
+Ext:html
+<audio src="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</audio>[>END<]!$[FingerTextData FingerTextData]@#
+aside
+Ext:html
+<aside role="complementary">$[![(key)SELECTION]!]$[0[]0]</aside>[>END<]!$[FingerTextData FingerTextData]@#
+art
+Ext:html
+<article>$[![(key)SELECTION]!]$[0[]0]</article>[>END<]!$[FingerTextData FingerTextData]@#
+area
+Ext:html
+<area shape="$[![(lis)default|circle|rect|poly]!]" coords="$[0[]0]" href="$[0[]0]" alt="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+adr
+Ext:html
+<address>$[![(key)SELECTION]!]$[0[]0]</address>[>END<]!$[FingerTextData FingerTextData]@#
+acronym
+Ext:html
+<acronym title="$[0[]0]">$[![(key)SELECTION]!]$[0[]0]</acronym>[>END<]!$[FingerTextData FingerTextData]@#
+acr
+Ext:html
+<acronym title="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</acronym>[>END<]!$[FingerTextData FingerTextData]@#
+abbr
+Ext:html
+<abbr title="$[0[]0]">$[![(key)SELECTION]!]$[0[]0]</abbr>[>END<]!$[FingerTextData FingerTextData]@#
+a
+Ext:html
+<a href="$[![{link}]!]"$[![ target="_blank"]!]>$[![(key)SELECTION]!]$[0[]0]</a>[>END<]!$[FingerTextData FingerTextData]@#
+zoo
+Ext:css
+zoom: $[![1]!];[>END<]!$[FingerTextData FingerTextData]@#
+z
+Ext:css
+z-index: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+wow
+Ext:css
+word-wrap: $[![(lis)normal|none|unrestricted|suppress|break-word]!];[>END<]!$[FingerTextData FingerTextData]@#
+wos
+Ext:css
+word-spacing: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+wob
+Ext:css
+word-break: $[![(lis)normal|keep-all|loose|break-strict|break-all]!];[>END<]!$[FingerTextData FingerTextData]@#
+wid
+Ext:css
+widows: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+whsc
+Ext:css
+white-space-collapse: $[![(lis)normal|keep-all|loose|break-strict|break-all]!];[>END<]!$[FingerTextData FingerTextData]@#
+whs
+Ext:css
+white-space: $[![(lis)normal|pre|nowrap|pre-wrap|pre-line]!];[>END<]!$[FingerTextData FingerTextData]@#
+w
+Ext:css
+width: $[![(lis)auto|100%]!];[>END<]!$[FingerTextData FingerTextData]@#
+va
+Ext:css
+vertical-align: $[![(lis)top|super|text-top|middle|baseline|bottom|text-bottom|sub]!];[>END<]!$[FingerTextData FingerTextData]@#
+v
+Ext:css
+visibility: $[![(lis)visible|hidden|collapse]!];[>END<]!$[FingerTextData FingerTextData]@#
+us
+Ext:css
+user-select: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+tw
+Ext:css
+text-wrap: $[![(lis)normal|none|unrestricted|suppress]!];[>END<]!$[FingerTextData FingerTextData]@#
+tt
+Ext:css
+text-transform: $[![(lis)uppercase|none|capitalize|lowercase]!];[>END<]!$[FingerTextData FingerTextData]@#
+tsh
+Ext:css
+text-shadow: $[![(lis)hoff voff blur #000|h v blur rgb(0, 0, 0)|h v blur rgba(0, 0, 0, .5)|none]!];$[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+trstf
+Ext:css
+transition-timing-function: $[![tfunc]!];[>END<]!$[FingerTextData FingerTextData]@#
+trsp
+Ext:css
+transition-property: $[![prop]!];[>END<]!$[FingerTextData FingerTextData]@#
+trsdu
+Ext:css
+transition-duration: $[![time]!];[>END<]!$[FingerTextData FingerTextData]@#
+trsde
+Ext:css
+transition-delay: $[![time]!];[>END<]!$[FingerTextData FingerTextData]@#
+trs
+Ext:css
+transition: $[![prop]!] $[![time]!] $[![ease]!] $[![delay]!];[>END<]!$[FingerTextData FingerTextData]@#
+trfs
+Ext:css
+transform-style: $[![preserve-3d]!];[>END<]!$[FingerTextData FingerTextData]@#
+trfo
+Ext:css
+transform-origin: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+trf
+Ext:css
+transform: $[![(lis)rotate(angle)|scale(x, y)|scaleX(x)|scaleY(y)|skewX(ax, ay)|skewX(angle)|skewY(angle)|translate(x, y)|translateX(x)|translateY(y)|matrix(a, c, b, d, tx, ty)]!];[>END<]!$[FingerTextData FingerTextData]@#
+tr
+Ext:css
+text-replace: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+tov
+Ext:css
+text-overflow: $[![(lis)ellipsis|clip]!];[>END<]!$[FingerTextData FingerTextData]@#
+to
+Ext:css
+text-outline: $[![(lis)0 0 #000|none]!];[>END<]!$[FingerTextData FingerTextData]@#
+tj
+Ext:css
+text-justify: $[![(lis)auto|inter-word|inter-ideograph|inter-cluster|distribute|kashida|tibetan]!];[>END<]!$[FingerTextData FingerTextData]@#
+ti
+Ext:css
+text-indent: $[![-999em]!];[>END<]!$[FingerTextData FingerTextData]@#
+th
+Ext:css
+text-height: $[![(lis)auto|font-size|text-size|max-size]!];[>END<]!$[FingerTextData FingerTextData]@#
+te
+Ext:css
+text-emphasis: $[![(lis)none|accent|dot|circle|disc|before|after]!];[>END<]!$[FingerTextData FingerTextData]@#
+td
+Ext:css
+text-decoration: $[![(lis)none|underline|overline|line-through]!];[>END<]!$[FingerTextData FingerTextData]@#
+tbl
+Ext:css
+table-layout: $[![(lis)auto|fixed]!];[>END<]!$[FingerTextData FingerTextData]@#
+ta-lst
+Ext:css
+text-align-last: $[![(lis)auto|left|center|right]!];[>END<]!$[FingerTextData FingerTextData]@#
+ta
+Ext:css
+text-align: $[![(lis)left|center|right|justify]!];[>END<]!$[FingerTextData FingerTextData]@#
+t
+Ext:css
+top: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+rsz
+Ext:css
+resize: $[![(lis)none|both|horizontal|vertical]!];[>END<]!$[FingerTextData FingerTextData]@#
+rgba
+Ext:css
+rgba($[![(lis)0,0,0,0.5|255,255,255,0.5]!])[>END<]!$[FingerTextData FingerTextData]@#
+r
+Ext:css
+right: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+q
+Ext:css
+quotes: $[![(lis)none|'\00AB' '\00BB' '\201E' '\201C'|'\201C' '\201D' '\2018' '\2019']!];[>END<]!$[FingerTextData FingerTextData]@#
+pt
+Ext:css
+padding-top: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+pr
+Ext:css
+padding-right: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+pos
+Ext:css
+position: $[![(lis)static|absolute|relative|fixed]!];[>END<]!$[FingerTextData FingerTextData]@#
+pl
+Ext:css
+padding-left: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+pgbi
+Ext:css
+page-break-inside: $[![(lis)auto|avoid]!];[>END<]!$[FingerTextData FingerTextData]@#
+pgbb
+Ext:css
+page-break-before: $[![(lis)auto|always|left|right]!];[>END<]!$[FingerTextData FingerTextData]@#
+pgba
+Ext:css
+page-break-after: $[![(lis)auto|always|left|right]!];[>END<]!$[FingerTextData FingerTextData]@#
+pev
+Ext:css
+pointer-events: $[![(lis)auto|none|visiblePainted|visibleFill|visibleStroke|visible|painted|fill|stroke|all|inherit]!];[>END<]!$[FingerTextData FingerTextData]@#
+pb
+Ext:css
+padding-bottom: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+p
+Ext:css
+padding: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+ovy
+Ext:css
+overflow-y: $[![(lis)visible|hidden|scroll|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+ovx
+Ext:css
+overflow-x: $[![(lis)visible|hidden|scroll|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+ovs
+Ext:css
+overflow-style: $[![(lis)auto|scrollbar|panner|move|marquee]!];[>END<]!$[FingerTextData FingerTextData]@#
+ov
+Ext:css
+overflow: $[![(lis)visible|hidden|scroll|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+orp
+Ext:css
+orphans: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+ori
+Ext:css
+orientation: $[![(lis)landscape|portrait]!];[>END<]!$[FingerTextData FingerTextData]@#
+op
+Ext:css
+opacity: $[![(lis)1|filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)|-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)']!];[>END<]!$[FingerTextData FingerTextData]@#
+olw
+Ext:css
+outline-width: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+ols
+Ext:css
+outline-style: $[![(lis)none|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
+olo
+Ext:css
+outline-offset: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+olc
+Ext:css
+outline-color: $[![(lis)#000|invert]!];[>END<]!$[FingerTextData FingerTextData]@#
+ol
+Ext:css
+outline: $[![color]!] $[![style]!] $[![width]!];[>END<]!$[FingerTextData FingerTextData]@#
+mt
+Ext:css
+margin-top: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+mr
+Ext:css
+margin-right: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+ml
+Ext:css
+margin-left: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+miw
+Ext:css
+min-width: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+mir
+Ext:css
+min-resolution: $[![res]!];[>END<]!$[FingerTextData FingerTextData]@#
+mih
+Ext:css
+min-height: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+mediamax
+Ext:css
+@media $[![only screen and ]!](max-width: $[![(lis)1199px|991px|767px|479px]!]) {
+
+$[0[]0]
+
+}[>END<]!$[FingerTextData FingerTextData]@#
+media
+Ext:css
+@media $[![only screen and ]!](min-width: $[![(lis)480px|768px|992px|1200px]!]) {
+
+$[0[]0]
+
+}[>END<]!$[FingerTextData FingerTextData]@#
+mb
+Ext:css
+margin-bottom: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+maw
+Ext:css
+max-width: $[![(lis)none|100%]!];[>END<]!$[FingerTextData FingerTextData]@#
+mar
+Ext:css
+max-resolution: $[![res]!];[>END<]!$[FingerTextData FingerTextData]@#
+mah
+Ext:css
+max-height: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+m
+Ext:css
+margin: $[![(lis)auto|0|0 auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+lts
+Ext:css
+letter-spacing: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+list
+Ext:css
+list-style-type: $[![(lis)none|disc|circle|square|decimal|decimal-leading-zero|lower-roman|upper-roman]!];[>END<]!$[FingerTextData FingerTextData]@#
+lisp
+Ext:css
+list-style-position: $[![(lis)inside|outside]!];[>END<]!$[FingerTextData FingerTextData]@#
+lisi
+Ext:css
+list-style-image: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+lis
+Ext:css
+list-style: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+lh
+Ext:css
+line-height: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+l
+Ext:css
+left: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+kf
+Ext:css
+@-webkit-keyframes $[![identifier]!] {
+	0% { $[![propfrom]!] }
+	100% { $[![propto]!] }
+}
+@-moz-keyframes $[![identifier]!] {
+	0% { $[![propfrom]!] }
+	100% { $[![propto]!] }
+}
+@-o-keyframes $[![identifier]!] {
+	0% { $[![propfrom]!] }
+	100% { $[![propto]!] }
+}
+@keyframes $[![identifier]!] {
+	0% { $[![propfrom]!] }
+	100% { $[![propto]!] }
+}[>END<]!$[FingerTextData FingerTextData]@#
+import
+Ext:css
+@import url($[0[]0]);[>END<]!$[FingerTextData FingerTextData]@#
+imp
+Ext:css
+important[>END<]!$[FingerTextData FingerTextData]@#
+h
+Ext:css
+height: $[![(lis)auto|100%]!];[>END<]!$[FingerTextData FingerTextData]@#
+fza
+Ext:css
+font-size-adjust: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+fz
+Ext:css
+font-size: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+fw
+Ext:css
+font-weight: $[![(lis)normal|bold|bolder|lighter]!];[>END<]!$[FingerTextData FingerTextData]@#
+fv
+Ext:css
+font-variant: $[![(lis)normal|small-caps]!];[>END<]!$[FingerTextData FingerTextData]@#
+fst
+Ext:css
+font-stretch: $[![(lis)normal|ultra-condensed|extra-condensed|condensed|semi-condensed|semi-expanded|expanded|extra-expanded|ultra-expanded]!];[>END<]!$[FingerTextData FingerTextData]@#
+fsm
+Ext:css
+font-smooth: $[![(lis)auto|never|always]!];[>END<]!$[FingerTextData FingerTextData]@#
+fs
+Ext:css
+font-style: $[![(lis)normal|italic|oblique]!];[>END<]!$[FingerTextData FingerTextData]@#
+fl
+Ext:css
+float: $[![(lis)none|left|right]!];[>END<]!$[FingerTextData FingerTextData]@#
+fface
+Ext:css
+@font-face {
+	font-family: '$[![FontName]!]';
+	src: url('$[![FileName]!].eot');
+	src: url('$[![FileName]!].eot?#iefix') format('embedded-opentype'), url('$[![FileName]!].woff') format('woff'), url('$[![FileName]!].ttf') format('truetype'), url('$[![FileName]!].svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}[>END<]!$[FingerTextData FingerTextData]@#
+ff
+Ext:css
+font-family: $[![(lis)serif|sans-serif|cursive|fantasy|monospace|Arial, "Helvetica Neue", Helvetica, sans-serif|"Times New Roman", Times, serif]!];[>END<]!$[FingerTextData FingerTextData]@#
+fems
+Ext:css
+font-emphasize-style: $[![(lis)none|accent|dot|circle|disc]!];[>END<]!$[FingerTextData FingerTextData]@#
+femp
+Ext:css
+font-emphasize-position: $[![(lis)before|after]!];[>END<]!$[FingerTextData FingerTextData]@#
+fem
+Ext:css
+font-emphasize: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+fef
+Ext:css
+font-effect: $[![(lis)none|engrave|emboss|outline]!];[>END<]!$[FingerTextData FingerTextData]@#
+f
+Ext:css
+font: $[![1em]!] $[![Arial,Helvetica,sans-serif]!];[>END<]!$[FingerTextData FingerTextData]@#
+ec
+Ext:css
+empty-cells: $[![(lis)show|hide]!];[>END<]!$[FingerTextData FingerTextData]@#
+d
+Ext:css
+display: $[![(lis)block|flex|flow|flow-root|grid|inline|inline-block|inline-flex|inline-grid|inline-table|list-item|none|ruby|ruby-base|ruby-base-container|ruby-text|ruby-text-container|table|table-caption|table-cell|table-column|table-column-group|table-footer-group|table-header-group|table-row|table-row-group]!];[>END<]!$[FingerTextData FingerTextData]@#
+cur
+Ext:css
+cursor: $[![(lis)auto|crosshair|default|hand|help|inherit|initial|move|pointer|text|unset]!];[>END<]!$[FingerTextData FingerTextData]@#
+cps
+Ext:css
+caption-side: $[![(lis)top|bottom]!];[>END<]!$[FingerTextData FingerTextData]@#
+cp
+Ext:css
+clip: rect($[![top]!]px $[![right]!]px $[![bottom]!]px $[![left]!]px);[>END<]!$[FingerTextData FingerTextData]@#
+cor
+Ext:css
+counter-reset: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colmw
+Ext:css
+column-width: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colms
+Ext:css
+column-span: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colmrw
+Ext:css
+column-rule-width: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colmrs
+Ext:css
+column-rule-style: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colmrc
+Ext:css
+column-rule-color: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colmr
+Ext:css
+column-rule: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colmg
+Ext:css
+column-gap: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colmf
+Ext:css
+column-fill: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colmc
+Ext:css
+column-count: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+colm
+Ext:css
+columns: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+coi
+Ext:css
+counter-increment: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+cnt
+Ext:css
+content: $[![(lis)''|normal|open-quote|no-open-quote|close-quote|no-close-quote|attr()|counter()|counters()]!];[>END<]!$[FingerTextData FingerTextData]@#
+cl
+Ext:css
+clear: $[![(lis)left|right|both]!];[>END<]!$[FingerTextData FingerTextData]@#
+c
+Ext:css
+color: $[![(lis)#000|#FFF|rgb(0, 0, 0)|rgba(0, 0, 0, .5)]!];[>END<]!$[FingerTextData FingerTextData]@#
+bxz
+Ext:css
+box-sizing: $[![(lis)border-box|content-box]!];[>END<]!$[FingerTextData FingerTextData]@#
+bxsh
+Ext:css
+box-shadow: $[![inset]!] $[![h]!] $[![v]!] $[![blur]!] $[![spread]!] $[![color]!] ;[>END<]!$[FingerTextData FingerTextData]@#
+bgsz
+Ext:css
+background-size: $[![(lis)auto|contain|cover|100% 100%]!];[>END<]!$[FingerTextData FingerTextData]@#
+bgr
+Ext:css
+background-repeat: $[![(lis)no-repeat|repeat-x|repeat-y|space|round]!];[>END<]!$[FingerTextData FingerTextData]@#
+bgpy
+Ext:css
+background-position-y: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bgpx
+Ext:css
+background-position-x: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bgp
+Ext:css
+background-position: $[![0]!] $[![0]!];[>END<]!$[FingerTextData FingerTextData]@#
+bgo
+Ext:css
+background-origin: $[![(lis)padding-box|border-box|content-box]!];[>END<]!$[FingerTextData FingerTextData]@#
+bgi
+Ext:css
+background-image: $[![(lis)url(../)|none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bgcp
+Ext:css
+background-clip: $[![(lis)padding-box|border-box|content-box|no-clip]!];[>END<]!$[FingerTextData FingerTextData]@#
+bgc
+Ext:css
+background-color: $[![(lis)#000|#fff|rgba(0,0,0,0.5)|transparent]!];[>END<]!$[FingerTextData FingerTextData]@#
+bgbk
+Ext:css
+background-break: $[![(lis)bounding-box|each-box|continuous]!];[>END<]!$[FingerTextData FingerTextData]@#
+bga
+Ext:css
+background-attachment: $[![(lis)fixed|scroll]!];[>END<]!$[FingerTextData FingerTextData]@#
+bg
+Ext:css
+background: $[![(lis)url(../) #fff no-repeat 0 0|none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdw
+Ext:css
+border-width: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdtw
+Ext:css
+border-top-width: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdts
+Ext:css
+border-top-style: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdtrrs
+Ext:css
+border-top-right-radius: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdtri
+Ext:css
+border-top-right-image: $[![(lis)url()|none|continue]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdtlrs
+Ext:css
+border-top-left-radius: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdtli
+Ext:css
+border-top-left-image: $[![(lis)url()|none|continue]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdti
+Ext:css
+border-top-image: $[![(lis)url()|none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdtc
+Ext:css
+border-top-color: $[![(lis)#000|transparent]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdt
+Ext:css
+border-top: $[![(lis)1px solid #000|none|0]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdsp
+Ext:css
+border-spacing: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bds
+Ext:css
+border-style: $[![(lis)none|hidden|dotted|dashed|solid|double|dot-dash|dot-dot-dash|wave|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdrw
+Ext:css
+border-right-width: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdrst
+Ext:css
+border-right-style: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdrs
+Ext:css
+border-radius: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdri
+Ext:css
+border-right-image: $[![(lis)url()|none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdrc
+Ext:css
+border-right-color: $[![(lis)#000|transparent]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdr
+Ext:css
+border-right: $[![(lis)1px solid #000|none|0]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdlw
+Ext:css
+border-left-width: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdls
+Ext:css
+border-left-style: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdli
+Ext:css
+border-left-image: $[![(lis)url()|none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdlen
+Ext:css
+border-length: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdlc
+Ext:css
+border-left-color: $[![(lis)#000|transparent]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdl
+Ext:css
+border-left: $[![(lis)1px solid #000|none|0]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdi
+Ext:css
+border-image: $[![(lis)url()|none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdf
+Ext:css
+border-fit: $[![(lis)repeat|clip|scale|stretch|overwrite|overflow|space]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdcl
+Ext:css
+border-collapse: $[![(lis)collapse|separate]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdci
+Ext:css
+border-corner-image: $[![(lis)url()|none|continue]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdc
+Ext:css
+border-color: $[![(lis)#000|transparent]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdbw
+Ext:css
+border-bottom-width: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdbs
+Ext:css
+border-bottom-style: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdbrrs
+Ext:css
+border-bottom-right-radius: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdbri
+Ext:css
+border-bottom-right-image: $[![(lis)url()|none|continue]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdblrs
+Ext:css
+border-bottom-left-radius: $[0[]0];[>END<]!$[FingerTextData FingerTextData]@#
+bdbli
+Ext:css
+border-bottom-left-image: $[![(lis)url()|none|continue]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdbk
+Ext:css
+border-break: $[![close]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdbi
+Ext:css
+border-bottom-image: $[![(lis)url()|none]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdbc
+Ext:css
+border-bottom-color: $[![(lis)#000|transparent]!];[>END<]!$[FingerTextData FingerTextData]@#
+bdb
+Ext:css
+border-bottom: $[![(lis)1px solid #000|none|0]!];[>END<]!$[FingerTextData FingerTextData]@#
+bd
+Ext:css
+border: $[![(lis)1px solid #000|none|0]!];[>END<]!$[FingerTextData FingerTextData]@#
+b
+Ext:css
+bottom: $[![auto]!];[>END<]!$[FingerTextData FingerTextData]@#
+ap
+Ext:css
+appearance: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+animtf
+Ext:css
+animation-timing-function: $[![(lis)linear|cubic-bezier(0.1, 0.7, 1.0, 0.1)|ease|ease-in|ease-in-out|ease-out]!];[>END<]!$[FingerTextData FingerTextData]@#
+animps
+Ext:css
+animation-play-state: $[![(lis)running|paused]!];[>END<]!$[FingerTextData FingerTextData]@#
+animn
+Ext:css
+animation-name: $[![none]!];[>END<]!$[FingerTextData FingerTextData]@#
+animic
+Ext:css
+animation-iteration-count: $[![(lis)1|infinite]!];[>END<]!$[FingerTextData FingerTextData]@#
+animfm
+Ext:css
+animation-fill-mode: $[![(lis)both|backwards|forwards]!];[>END<]!$[FingerTextData FingerTextData]@#
+animdur
+Ext:css
+animation-duration: $[![0s]!];[>END<]!$[FingerTextData FingerTextData]@#
+animdir
+Ext:css
+animation-direction: $[![(lis)normal|alternate|alternate-reverse|reverse]!];[>END<]!$[FingerTextData FingerTextData]@#
+animdel
+Ext:css
+animation-delay: $[![time]!];[>END<]!$[FingerTextData FingerTextData]@#
+anim
+Ext:css
+animation: $[![property]!] $[![duration]!]s $[![(lis)linear|ease|ease-in|ease-in-out|ease-out|step-start|step-end|cubic-bezier()]!] $[![delay]!] $[![iteration-count]!] $[![direction]!] $[![fill-mode]!];[>END<]!$[FingerTextData FingerTextData]@#

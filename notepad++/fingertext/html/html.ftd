@@ -1,0 +1,384 @@
+wbr
+Ext:html
+<wbr>[>END<]!$[FingerTextData FingerTextData]@#
+video
+Ext:html
+<video src="$[![]!]"$[![ autoplay]!]$[![ controls]!]$[![ preload="$[![(lis)none|metadata|auto]!]"]!]$[![ muted]!]$[![ loop]!]>$[![
+	<source src="$[![]!]" type="$[![]!]">
+]!]</video>[>END<]!$[FingerTextData FingerTextData]@#
+ul
+Ext:html
+<ul>
+	<li>$[![item]!]</li>
+</ul>[>END<]!$[FingerTextData FingerTextData]@#
+u
+Ext:html
+<u>$[![(key)SELECTION]!]$[0[]0]</u>[>END<]!$[FingerTextData FingerTextData]@#
+textarea
+Ext:html
+<textarea name="$[![]!]" id="$[![]!]"$[![ cols="30" rows="10"]!]>$[![(key)SELECTION]!]$[0[]0]</textarea>[>END<]!$[FingerTextData FingerTextData]@#
+target
+Ext:html
+target="$[![(lis)_blank|_parent|_top|_self]!]"[>END<]!$[FingerTextData FingerTextData]@#
+tr
+Ext:html
+<tr>$[![(key)SELECTION]!]$[0[]0]</tr>[>END<]!$[FingerTextData FingerTextData]@#
+title
+Ext:html
+<title>$[![(key)SELECTION]!]$[0[]0]</title>[>END<][>END<]!$[FingerTextData FingerTextData]@#
+thead
+Ext:html
+<thead>
+	<tr>
+		<th scope="$[![(lis)col|row]!]">$[![Header]!]</th>
+	</tr>
+</thead>[>END<]!$[FingerTextData FingerTextData]@#
+th
+Ext:html
+<th scope="$[![(lis)col|row]!]">$[![(key)SELECTION]!]$[0[]0]</th>[>END<]!$[FingerTextData FingerTextData]@#
+tfooter
+Ext:html
+<tfooter>
+	$[![(key)SELECTION]!]
+</tfooter>[>END<]!$[FingerTextData FingerTextData]@#
+td
+Ext:html
+<td>$[![(key)SELECTION]!]$[0[]0]</td>[>END<]!$[FingerTextData FingerTextData]@#
+tbody
+Ext:html
+<tbody>
+	$[![(key)SELECTION]!]
+</tbody>[>END<]!$[FingerTextData FingerTextData]@#
+table
+Ext:html
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<th scope="$[![(lis)col|row]!]">$[![Header]!]</th>
+	</tr>
+	<tr>
+		<td>$[![cell]!]</td>
+	</tr>
+</table>[>END<]!$[FingerTextData FingerTextData]@#
+sup
+Ext:html
+<sup>$[![(key)SELECTION]!]$[0[]0]</sup>[>END<]!$[FingerTextData FingerTextData]@#
+sub
+Ext:html
+<sub>$[![(key)SELECTION]!]$[0[]0]</sub>[>END<]!$[FingerTextData FingerTextData]@#
+style
+Ext:html
+<style>
+$[![(key)SELECTION]!]$[0[]0]
+</style>[>END<]!$[FingerTextData FingerTextData]@#
+strong
+Ext:html
+<strong>$[![(key)SELECTION]!]$[0[]0]</strong>[>END<]!$[FingerTextData FingerTextData]@#
+source
+Ext:html
+<source $[![src=""]!]$[![ srcset="image.fmt 320w"]!]$[![ sizes="(max-width: 320px) 280px"]!]$[![ media="(min-width: 600px)"]!]$[![ type=""]!]>[>END<]!$[FingerTextData FingerTextData]@#
+span
+Ext:html
+<span>$[![(key)SELECTION]!]$[0[]0]</span>[>END<]!$[FingerTextData FingerTextData]@#
+small
+Ext:html
+<small>$[![(key)SELECTION]!]$[0[]0]</small>[>END<]!$[FingerTextData FingerTextData]@#
+select
+Ext:html
+<select name="$[![]!]" id="$[![]!]">
+	<option value="$[![]!]">$[0[]0]</option>
+</select>[>END<]!$[FingerTextData FingerTextData]@#
+section
+Ext:html
+<section>$[![(key)SELECTION]!]$[0[]0]</section>[>END<]!$[FingerTextData FingerTextData]@#
+script
+Ext:html
+$[![(lis)<script>
+$[![(key)SELECTION]!]$[0[]0]
+</script>|<script src="$[![]!]"$[![ type="module"]!]$[![(lis) defer| async]!]></script>]!][>END<]!$[FingerTextData FingerTextData]@#
+samp
+Ext:html
+<samp>$[![(key)SELECTION]!]$[0[]0]</samp>[>END<]!$[FingerTextData FingerTextData]@#
+progress
+Ext:html
+<progress max="$[![]!]" value="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</progress>[>END<]!$[FingerTextData FingerTextData]@#
+pre
+Ext:html
+<pre>$[![(key)SELECTION]!]$[0[]0]</pre>[>END<]!$[FingerTextData FingerTextData]@#
+php
+Ext:html
+<?php $[0[]0] ?>[>END<]!$[FingerTextData FingerTextData]@#
+param
+Ext:html
+<param name="$[0[]0]" value="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+p
+Ext:html
+<p>$[![(key)SELECTION]!]$[0[]0]</p>[>END<]!$[FingerTextData FingerTextData]@#
+output
+Ext:html
+<output for="$[0[]0]" name="$[0[]0]">$[0[]0]</output>[>END<]!$[FingerTextData FingerTextData]@#
+option
+Ext:html
+<option value="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</option>[>END<]!$[FingerTextData FingerTextData]@#
+optgroup
+Ext:html
+<optgroup>
+	<option value="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</option>
+</optgroup>[>END<]!$[FingerTextData FingerTextData]@#
+ol
+Ext:html
+<ol>
+	<li>$[![item]!]</li>
+</ol>[>END<]!$[FingerTextData FingerTextData]@#
+object
+Ext:html
+<object data="$[0[]0]" type="$[0[]0]">$[![(key)SELECTION]!]$[0[]0]</object>[>END<]!$[FingerTextData FingerTextData]@#
+noscript
+Ext:html
+<noscript>$[![Your browser does not support JavaScript!]!]$[0[]0]</noscript>[>END<]!$[FingerTextData FingerTextData]@#
+nbsp
+Ext:html
+&nbsp;[>END<]!$[FingerTextData FingerTextData]@#
+nav
+Ext:html
+<nav $[![role="navigation"]!]>$[0[]0]</nav>[>END<]!$[FingerTextData FingerTextData]@#
+meta
+Ext:html
+$[![(lis)<meta />|<meta charset="utf-8">|<meta name="description" content="$[0[]0]">|<meta name="keywords" content="$[0[]0]">|<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />|<meta http-equiv="x-ua-compatible" content="ie=edge">]!][>END<]!$[FingerTextData FingerTextData]@#
+menu
+Ext:html
+<menu type="$[![(lis)context|toolbar]!]">$[![(key)SELECTION]!]$[0[]0]</menu>[>END<]!$[FingerTextData FingerTextData]@#
+map
+Ext:html
+<map name="$[![]!]">
+	 $[![(cha)area]!]
+</map>[>END<]!$[FingerTextData FingerTextData]@#
+main
+Ext:html
+<main role="main">$[![(key)SELECTION]!]$[0[]0]</main>[>END<]!$[FingerTextData FingerTextData]@#
+link
+Ext:html
+$[![(lis)<link rel="$[![(lis)external|import|manifest|modulepreload|nofollow|noopener noreferrer|prefetch|preload|stylesheet]!]" href="$[0[]0]" $[![media="print"]!]/>|]!][>END<]!$[FingerTextData FingerTextData]@#
+li
+Ext:html
+<li>$[![(key)SELECTION]!]$[0[]0]</li>[>END<]!$[FingerTextData FingerTextData]@#
+legend
+Ext:html
+<legend>$[![(key)SELECTION]!]$[0[]0]</legend>[>END<]!$[FingerTextData FingerTextData]@#
+label
+Ext:html
+<label for="$[0[]0]">$[![(key)SELECTION]!]$[0[]0]</label>[>END<]!$[FingerTextData FingerTextData]@#
+keygen
+Ext:html
+<keygen />[>END<]!$[FingerTextData FingerTextData]@#
+keygen
+Ext:html
+<keygen />[>END<]!$[FingerTextData FingerTextData]@#
+kbd
+Ext:html
+<kbd>$[![(key)SELECTION]!]$[0[]0]</kbd>[>END<]!$[FingerTextData FingerTextData]@#
+ins
+Ext:html
+<ins>$[![(key)SELECTION]!]$[0[]0]</ins>[>END<]!$[FingerTextData FingerTextData]@#
+input
+Ext:html
+<input type="$[![(lis)button|checkbox|color|date|datetime-local|email|file|hidden|image|month|number|password|radio|range|reset|search|submit|tel|text|time|url|week]!]" name="$[![]!]" id="$[![]!]" value="$[![]!]"$[![min="" max="" step="" ]!]$[![required ]!]$[![pattern="regex" ]!]$[![readonly ]!] />[>END<]
+img
+Ext:html
+<img src="$[0[]0]" alt="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+imgr
+Ext:html
+<img src="$[0[]0]" srcset="$[![image.fmt 320w]!]" sizes="$[![(max-width: 320px) 280px]!]" alt="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+iframe
+Ext:html
+<iframe src="$[0[]0]" frameborder="0">$[![(key)SELECTION]!]$[0[]0]</iframe>[>END<]!$[FingerTextData FingerTextData]@#
+i
+Ext:html
+<i>$[![(key)SELECTION]!]$[0[]0]</i>[>END<]!$[FingerTextData FingerTextData]@#
+href
+Ext:html
+href="$[![(lis)|mailto:|javascript:;]!]"[>END<]!$[FingerTextData FingerTextData]@#
+hr
+Ext:html
+<hr />[>END<]!$[FingerTextData FingerTextData]@#
+header
+Ext:html
+<header role="banner">$[![(key)SELECTION]!]$[0[]0]</header>[>END<]!$[FingerTextData FingerTextData]@#
+head
+Ext:html
+<head>$[0[]0]</head>[>END<]!$[FingerTextData FingerTextData]@#
+h6
+Ext:html
+<h6>$[![(key)SELECTION]!]$[0[]0]</h6>[>END<]!$[FingerTextData FingerTextData]@#
+h5
+Ext:html
+<h5>$[![(key)SELECTION]!]$[0[]0]</h5>[>END<]!$[FingerTextData FingerTextData]@#
+h4
+Ext:html
+<h4>$[![(key)SELECTION]!]$[0[]0]</h4>[>END<]!$[FingerTextData FingerTextData]@#
+h3
+Ext:html
+<h3>$[![(key)SELECTION]!]$[0[]0]</h3>[>END<]!$[FingerTextData FingerTextData]@#
+h2
+Ext:html
+<h2>$[![(key)SELECTION]!]$[0[]0]</h2>[>END<]!$[FingerTextData FingerTextData]@#
+h1
+Ext:html
+<h1>$[![(key)SELECTION]!]$[0[]0]</h1>[>END<]!$[FingerTextData FingerTextData]@#
+fieldset
+Ext:html
+<fieldset>$[![(key)SELECTION]!]$[0[]0]</fieldset>[>END<]!$[FingerTextData FingerTextData]@#
+frame
+Ext:html
+<frame src="$[0[]0]" frameborder="0" />[>END<]!$[FingerTextData FingerTextData]@#
+frameset
+Ext:html
+<frameset cols="$[![]!]">
+	<frame src="$[0[]0]" frameborder="0" />
+</frameset>[>END<]!$[FingerTextData FingerTextData]@#
+form
+Ext:html
+<form action="$[0[]0]" method="$[![(lis)get|post]!]" $[![enctype="multipart/form-data"]!] role="form">
+	$[![(key)SELECTION]!]$[0[]0]
+</form>[>END<]!$[FingerTextData FingerTextData]@#
+footer
+Ext:html
+<footer role="contentinfo">$[![(key)SELECTION]!]$[0[]0]</footer>[>END<]!$[FingerTextData FingerTextData]@#
+figcaption
+Ext:html
+<figcaption>$[![(key)SELECTION]!]$[0[]0]</figcaption>[>END<]!$[FingerTextData FingerTextData]@#
+figure
+Ext:html
+<figure>
+	$[![(key)SELECTION]!]$[0[]0]$[![
+	<figcaption></figcaption>]!]
+</figure>[>END<]!$[FingerTextData FingerTextData]@#
+embed
+Ext:html
+<embed src="$[0[]0]" type="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+em
+Ext:html
+<em>$[![(key)SELECTION]!]$[0[]0]</em>[>END<]!$[FingerTextData FingerTextData]@#
+doc
+Ext:html
+<!doctype html>
+<html lang="$[![en]!]">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>$[![title]!]</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="$[![description]!]">
+	
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	$[0[]0]
+	
+	<script src="js/main.js" defer></script>
+</body>
+</html>[>END<]!$[FingerTextData FingerTextData]@#
+dialog
+Ext:html
+<dialog>$[![(key)SELECTION]!]$[0[]0]</dialog>[>END<]!$[FingerTextData FingerTextData]@#
+dl
+Ext:html
+<dl>
+	<dt>$[![term]!]</dt>
+	<dd>$[![definition]!]</dd>
+</dl>[>END<]!$[FingerTextData FingerTextData]@#
+div
+Ext:html
+<div class="$[0[]0]">$[![(key)SELECTION]!]$[0[]0]</div>[>END<]!$[FingerTextData FingerTextData]@#
+dfn
+Ext:html
+<dfn>$[![(key)SELECTION]!]$[0[]0]</dfn>[>END<]!$[FingerTextData FingerTextData]@#
+details
+Ext:html
+<details>$[![(key)SELECTION]!]$[0[]0]</details>[>END<]!$[FingerTextData FingerTextData]@#
+del
+Ext:html
+<del>$[![(key)SELECTION]!]$[0[]0]</del>[>END<]!$[FingerTextData FingerTextData]@#
+datalist
+Ext:html
+<datalist id="$[0[]0]">
+	<option value="$[0[]0]">$[0[]0]
+</datalist>[>END<]!$[FingerTextData FingerTextData]@#
+colgroup
+Ext:html
+<colgroup>
+	<col $[![span="1" ]!]class="$[![]!]" />$[![(key)SELECTION]!]$[0[]0]
+</colgroup>[>END<]!$[FingerTextData FingerTextData]@#
+col
+Ext:html
+<col $[![span="1" ]!]class="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+code
+Ext:html
+<code>$[![(key)SELECTION]!]$[0[]0]</code>[>END<]!$[FingerTextData FingerTextData]@#
+cite
+Ext:html
+<cite>$[![(key)SELECTION]!]$[0[]0]</cite>[>END<]!$[FingerTextData FingerTextData]@#
+caption
+Ext:html
+<caption>$[![(key)SELECTION]!]$[0[]0]</caption>[>END<]!$[FingerTextData FingerTextData]@#
+canvas
+Ext:html
+<canvas width="$[![800]!]" height="$[![600]!]" id="$[![canvas]!]"></canvas>[>END<]!$[FingerTextData FingerTextData]@#
+button
+Ext:html
+<button type="$[![(lis)button|reset|submit]!]">$[![(key)SELECTION]!]$[0[]0]</button>[>END<]!$[FingerTextData FingerTextData]@#
+br
+Ext:html
+<br>[>END<]!$[FingerTextData FingerTextData]@#
+bq
+Ext:html
+<blockquote>$[![(key)SELECTION]!]$[0[]0]</blockquote>[>END<]!$[FingerTextData FingerTextData]@#
+bdo
+Ext:html
+<bdo dir="$[![(lis)rtl|ltr]!]">$[![(key)SELECTION]!]$[0[]0]</bdo>[>END<]!$[FingerTextData FingerTextData]@#
+base
+Ext:html
+<base href="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
+b
+Ext:html
+<b>$[![(key)SELECTION]!]$[0[]0]</b>[>END<]!$[FingerTextData FingerTextData]@#
+audio
+Ext:html
+<audio src="$[![]!]"$[![ autoplay]!]$[![ controls]!]$[![ preload="$[![(lis)none|metadata|auto]!]"]!]$[![ loop]!]>$[![
+	<source src="" type="">
+]!]</audio>[>END<]!$[FingerTextData FingerTextData]@#
+aside
+Ext:html
+<aside role="complementary">$[![(key)SELECTION]!]$[0[]0]</aside>[>END<]!$[FingerTextData FingerTextData]@#
+article
+Ext:html
+<article>$[![(key)SELECTION]!]$[0[]0]</article>[>END<]!$[FingerTextData FingerTextData]@#
+area
+Ext:html
+<area shape="$[![(lis)default|circle|rect|poly]!]" coords="$[![]!]" href="$[![]!]" alt="$[![]!]" />[>END<]!$[FingerTextData FingerTextData]@#
+address
+Ext:html
+<address>$[![(key)SELECTION]!]$[0[]0]</address>[>END<]!$[FingerTextData FingerTextData]@#
+acronym
+Ext:html
+<acronym title="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</acronym>[>END<]!$[FingerTextData FingerTextData]@#
+abbr
+Ext:html
+<abbr title="$[0[]0]">$[![(key)SELECTION]!]$[0[]0]</abbr>[>END<]!$[FingerTextData FingerTextData]@#
+a
+Ext:html
+<a $[![(cha)href]!] $[![(cha)target]!]>$[![(key)SELECTION]!]$[0[]0]</a>[>END<]!$[FingerTextData FingerTextData]@#
+ablank
+Ext:html
+<a $[![(cha)href]!] target="_blank" rel="noopener noreferrer">$[![(key)SELECTION]!]$[0[]0]</a>[>END<]!$[FingerTextData FingerTextData]@#
+picture
+Ext:html
+<picture>
+	<source srcset="$[![image.fmt 320w]!]" media="$[![ (min-width: 600px)]!]">
+	<img src="$[0[]0]" alt="$[0[]0]" />
+	$[![(key)SELECTION]!]$[0[]0]
+</picture>[>END<]!$[FingerTextData FingerTextData]@#
+time
+Ext:html
+<time datetime="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</time>[>END<]!$[FingerTextData FingerTextData]@#
