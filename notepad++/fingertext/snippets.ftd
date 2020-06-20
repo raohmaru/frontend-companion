@@ -48,38 +48,38 @@ Ext:css
 all: $[![(lis)inherit|initial|revert|unset]!];[>END<]!$[FingerTextData FingerTextData]@#
 anim
 Ext:css
-animation: $[![<time> || <timing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none|<keyframes-name> ]]!];[>END<]!$[FingerTextData FingerTextData]@#
+animation: $[![(lis)<duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode> <play-state> <name>|<duration> <timing-function> <delay> <name>|<name> <duration>]!];[>END<]!$[FingerTextData FingerTextData]@#
 animdel
 Ext:css
 animation-delay: $[![<time>]!];[>END<]!$[FingerTextData FingerTextData]@#
 animdir
 Ext:css
-animation-direction: $[![normal|reverse|alternate|alternate-reverse]!];[>END<]!$[FingerTextData FingerTextData]@#
+animation-direction: $[![(lis)normal|reverse|alternate|alternate-reverse]!];[>END<]!$[FingerTextData FingerTextData]@#
 animdur
 Ext:css
 animation-duration: $[![<time>]!];[>END<]!$[FingerTextData FingerTextData]@#
 animfm
 Ext:css
-animation-fill-mode: $[![none|forwards|backwards|both]!];[>END<]!$[FingerTextData FingerTextData]@#
+animation-fill-mode: $[![(lis)none|forwards|backwards|both]!];[>END<]!$[FingerTextData FingerTextData]@#
 animic
 Ext:css
-animation-iteration-count: $[![infinite|<number>]!];[>END<]!$[FingerTextData FingerTextData]@#
+animation-iteration-count: $[![(lis)infinite|<number>]!];[>END<]!$[FingerTextData FingerTextData]@#
 animn
 Ext:css
 animation-name: $[![(lis)<custom-ident>|<string>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 animps
 Ext:css
-animation-play-state: $[![running|paused]!];[>END<]!$[FingerTextData FingerTextData]@#
+animation-play-state: $[![(lis)running|paused]!];[>END<]!$[FingerTextData FingerTextData]@#
 animtf
 Ext:css
-animation-timing-function: $[![linear|<cubic-bezier-timing-function>|<step-timing-function>]!];[>END<]!$[FingerTextData FingerTextData]@#
+animation-timing-function: $[![(lis)linear|<cubic-bezier-timing-function>|<step-timing-function>]!];[>END<]!$[FingerTextData FingerTextData]@#
 ap
 Ext:css
 appearance: $[![(lis)auto|button|none|searchfield|textarea|push-button|button-bevel|slider-horizontal|checkbox|radio|square-button|menulist|menulist-button|listbox|meter|progress-bar|textfield]!];[>END<]!$[FingerTextData FingerTextData]@#
 azimuth
 Ext:css
 azimuth: $[![(lis)<angle>|behind|center|center-left|center-right|far-left|far-right|left|left-side|leftwards|right|right-side|rightwards]!];[>END<]!$[FingerTextData FingerTextData]@#
-backdropfilter
+backdrop-filter
 Ext:css
 backdrop-filter: $[![(lis)blur()|brightness()|contrast()|drop-shadow()|grayscale()|hue-rotate()|invert()|opacity()|saturate()|sepia()|url()|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 bfv
@@ -87,83 +87,83 @@ Ext:css
 backface-visibility: $[![(lis)hidden|visible]!];[>END<]!$[FingerTextData FingerTextData]@#
 bg
 Ext:css
-background: $[![(lis)<'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>|<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>]!];[>END<]!$[FingerTextData FingerTextData]@#
+background: $[![<background-color> <bg-image> <bg-position> [ / <bg-size> ]? <repeat-style> <attachment> <box>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bga
 Ext:css
-background-attachment: $[![scroll|fixed|local]!];[>END<]!$[FingerTextData FingerTextData]@#
-backgroundblendmode
+background-attachment: $[![(lis)scroll|fixed|local]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-blend-mode
 Ext:css
-background-blend-mode: $[![normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|hard-light|soft-light|difference|exclusion|hue|saturation|color|luminosity]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-blend-mode: $[![(lis)normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|hard-light|soft-light|difference|exclusion|hue|saturation|color|luminosity]!];[>END<]!$[FingerTextData FingerTextData]@#
 bgcp
 Ext:css
-background-clip: $[![border-box|padding-box|content-box]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-clip: $[![(lis)border-box|padding-box|content-box]!];[>END<]!$[FingerTextData FingerTextData]@#
 bgc
 Ext:css
-background-color: $[![<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-color: $[![(lis)<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bgi
 Ext:css
-background-image: $[![none|<image>]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-image: $[![(lis)none|url('$[0[]0]')]!];[>END<]!$[FingerTextData FingerTextData]@#
 bgo
 Ext:css
-background-origin: $[![border-box|padding-box|content-box]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-origin: $[![(lis)border-box|padding-box|content-box]!];[>END<]!$[FingerTextData FingerTextData]@#
 bgp
 Ext:css
-background-position: $[![[ [ left|center|right|top|bottom|<length-percentage> ]|[ left|center|right|<length-percentage> ] [ top|center|bottom|<length-percentage> ]|[ center|[ left|right ] <length-percentage>? ] && [ center|[ top|bottom ] <length-percentage>? ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-position: $[![(lis)<position>|<position-x> <position-y>|<position-x> <position-keyword-y> <offset>|<position-keyword-x> <offset> <position-keyword-y> <offset>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bgpx
 Ext:css
-background-position-x: $[![(lis)<length>|<percentage>|center|left|right|x-end|x-start]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-position-x: $[![center | [ left | right | x-start | x-end ]? <offset>?]!];[>END<]!$[FingerTextData FingerTextData]@#
 bgpy
 Ext:css
-background-position-y: $[![(lis)<length>|<percentage>|bottom|center|top|y-end|y-start]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-position-y: $[![center | [ top | bottom | y-start | y-end ]? <offset>?]!];[>END<]!$[FingerTextData FingerTextData]@#
 bgr
 Ext:css
-background-repeat: $[![repeat-x|repeat-y|[ repeat|space|round|no-repeat ]{1,2}]!];[>END<]!$[FingerTextData FingerTextData]@#
+background-repeat: $[![(lis)repeat-x|repeat-y|[repeat^space^round^no-repeat]{1,2}]!];[>END<]!$[FingerTextData FingerTextData]@#
 bgsz
 Ext:css
-background-size: $[![[ <length-percentage>|auto ]{1,2}|cover|contain]!];[>END<]!$[FingerTextData FingerTextData]@#
-blockoverflow
+background-size: $[![(lis)[<length-percentage> ^ auto]{1,2}|cover|contain]!];[>END<]!$[FingerTextData FingerTextData]@#
+blockover-flow
 Ext:css
 block-overflow: $[![(lis)<string>|clip|ellipsis]!];[>END<]!$[FingerTextData FingerTextData]@#
-blocksize
+block-size
 Ext:css
 block-size: $[![<width>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bd
 Ext:css
 border: $[![(lis)<length>|thin|medium|thick|<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>|none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblock
+border-block
 Ext:css
 border-block: $[![(lis)<border-top-style>|<border-top-width>|<color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockcolor
+border-block-color
 Ext:css
 border-block-color: $[![(lis)1|2|<border-top-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockstyle
+border-block-style
 Ext:css
 border-block-style: $[![<border-top-style>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockwidth
+border-block-width
 Ext:css
 border-block-width: $[![<border-top-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockend
+border-block-end
 Ext:css
 border-block-end: $[![(lis)<border-top-style>|<border-top-width>|<color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockendcolor
+border-block-endcolor
 Ext:css
 border-block-end-color: $[![<border-top-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockendstyle
+border-block-endstyle
 Ext:css
 border-block-end-style: $[![<border-top-style>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockendwidth
+border-block-endwidth
 Ext:css
 border-block-end-width: $[![<border-top-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockstart
+border-block-start
 Ext:css
 border-block-start: $[![(lis)<border-top-style>|<border-top-width>|<color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockstartcolor
+border-block-startcolor
 Ext:css
 border-block-start-color: $[![<border-top-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockstartstyle
+border-block-startstyle
 Ext:css
 border-block-start-style: $[![<border-top-style>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderblockstartwidth
+border-block-startwidth
 Ext:css
 border-block-start-width: $[![<border-top-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdb
@@ -180,74 +180,74 @@ Ext:css
 border-bottom-right-radius: $[![(lis)1|2|<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdbs
 Ext:css
-border-bottom-style: $[![none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-bottom-style: $[![(lis)none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdbw
 Ext:css
-border-bottom-width: $[![<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-bottom-width: $[![(lis)<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdcl
 Ext:css
 border-collapse: $[![(lis)collapse|separate]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdc
 Ext:css
 border-color: $[![(lis)1|4|<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderendendradius
+border-end-end-radius
 Ext:css
 border-end-end-radius: $[![(lis)1|2|<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderendstartradius
+border-end-start-radius
 Ext:css
 border-end-start-radius: $[![(lis)1|2|<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdi
 Ext:css
 border-image: $[![(lis)<border-image-outset>|<border-image-repeat>|<border-image-slice>|<border-image-source>|<border-image-width>|<border-image-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderimageoutset
+border-image-outset
 Ext:css
 border-image-outset: $[![(lis)1|4|<length>|<number>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderimagerepeat
+border-image-repeat
 Ext:css
 border-image-repeat: $[![(lis)1|2|repeat|round|space|stretch]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderimageslice
+border-image-slice
 Ext:css
 border-image-slice: $[![(lis)1|4|<number>|<percentage>|fill]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderimagesource
+border-image-source
 Ext:css
 border-image-source: $[![(lis)<url>|<image()>|<image-set()>|<element()>|<cross-fade()>|<gradient>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderimagewidth
+border-image-width
 Ext:css
 border-image-width: $[![(lis)1|4|<length>|<percentage>|<number>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinline
+border-inline
 Ext:css
 border-inline: $[![(lis)<border-top-style>|<border-top-width>|<color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlineend
+border-inline-end
 Ext:css
 border-inline-end: $[![(lis)<border-top-style>|<border-top-width>|<color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlinecolor
+border-inline-color
 Ext:css
 border-inline-color: $[![(lis)1|2|<border-top-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlinestyle
+border-inline-style
 Ext:css
 border-inline-style: $[![<border-top-style>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlinewidth
+border-inline-width
 Ext:css
 border-inline-width: $[![<border-top-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlineendcolor
+border-inline-endcolor
 Ext:css
 border-inline-end-color: $[![<border-top-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlineendstyle
+border-inline-endstyle
 Ext:css
 border-inline-end-style: $[![<border-top-style>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlineendwidth
+border-inline-endwidth
 Ext:css
 border-inline-end-width: $[![<border-top-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlinestart
+border-inline-start
 Ext:css
 border-inline-start: $[![(lis)<border-top-style>|<border-top-width>|<color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlinestartcolor
+border-inline-startcolor
 Ext:css
 border-inline-start-color: $[![<border-top-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlinestartstyle
+border-inline-startstyle
 Ext:css
 border-inline-start-style: $[![<border-top-style>]!];[>END<]!$[FingerTextData FingerTextData]@#
-borderinlinestartwidth
+border-inline-startwidth
 Ext:css
 border-inline-start-width: $[![<border-top-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdl
@@ -255,13 +255,13 @@ Ext:css
 border-left: $[![(lis)<length>|thin|medium|thick|<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>|none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdlc
 Ext:css
-border-left-color: $[![<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-left-color: $[![(lis)<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdls
 Ext:css
-border-left-style: $[![none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-left-style: $[![(lis)none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdlw
 Ext:css
-border-left-width: $[![<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-left-width: $[![(lis)<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdrs
 Ext:css
 border-radius: $[![(lis)1|1|4|4|<length>|<percentage>|<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
@@ -270,13 +270,13 @@ Ext:css
 border-right: $[![(lis)<length>|thin|medium|thick|<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>|none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdrc
 Ext:css
-border-right-color: $[![<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-right-color: $[![(lis)<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdrst
 Ext:css
-border-right-style: $[![none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-right-style: $[![(lis)none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdrw
 Ext:css
-border-right-width: $[![<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-right-width: $[![(lis)<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdsp
 Ext:css
 border-spacing: $[![(lis)<length>|<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
@@ -294,7 +294,7 @@ Ext:css
 border-top: $[![(lis)<length>|thin|medium|thick|<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>|none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdtc
 Ext:css
-border-top-color: $[![<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-top-color: $[![(lis)<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdtlrs
 Ext:css
 border-top-left-radius: $[![(lis)1|2|<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
@@ -303,41 +303,41 @@ Ext:css
 border-top-right-radius: $[![(lis)1|2|<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdts
 Ext:css
-border-top-style: $[![none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-top-style: $[![(lis)none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdtw
 Ext:css
-border-top-width: $[![<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
+border-top-width: $[![(lis)<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
 bdw
 Ext:css
 border-width: $[![(lis)1|4|<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
 b
 Ext:css
 bottom: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-boxalign
+box-align
 Ext:css
 box-align: $[![(lis)baseline|center|end|start|stretch]!];[>END<]!$[FingerTextData FingerTextData]@#
-boxdecorationbreak
+box-decoration-break
 Ext:css
 box-decoration-break: $[![(lis)clone|slice]!];[>END<]!$[FingerTextData FingerTextData]@#
-boxdirection
+box-direction
 Ext:css
 box-direction: $[![(lis)inherit|normal|reverse]!];[>END<]!$[FingerTextData FingerTextData]@#
-boxflex
+box-flex
 Ext:css
 box-flex: $[![<number>]!];[>END<]!$[FingerTextData FingerTextData]@#
-boxflexgroup
+box-flex-group
 Ext:css
 box-flex-group: $[![<integer>]!];[>END<]!$[FingerTextData FingerTextData]@#
-boxlines
+box-lines
 Ext:css
 box-lines: $[![(lis)multiple|single]!];[>END<]!$[FingerTextData FingerTextData]@#
-boxordinalgroup
+box-ordinal-group
 Ext:css
 box-ordinal-group: $[![<integer>]!];[>END<]!$[FingerTextData FingerTextData]@#
-boxorient
+box-orient
 Ext:css
 box-orient: $[![(lis)block-axis|horizontal|inherit|inline-axis|vertical]!];[>END<]!$[FingerTextData FingerTextData]@#
-boxpack
+box-pack
 Ext:css
 box-pack: $[![(lis)center|end|justify|start]!];[>END<]!$[FingerTextData FingerTextData]@#
 bxsh
@@ -346,19 +346,19 @@ box-shadow: $[![(lis)inset? && <length>{2,4} && <color>?|none]!];[>END<]!$[Finge
 bxz
 Ext:css
 box-sizing: $[![(lis)border-box|content-box]!];[>END<]!$[FingerTextData FingerTextData]@#
-breakafter
+break-after
 Ext:css
 break-after: $[![(lis)all|always|auto|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso]!];[>END<]!$[FingerTextData FingerTextData]@#
-breakbefore
+break-before
 Ext:css
 break-before: $[![(lis)all|always|auto|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso]!];[>END<]!$[FingerTextData FingerTextData]@#
-breakinside
+break-inside
 Ext:css
 break-inside: $[![(lis)auto|avoid|avoid-column|avoid-page|avoid-region]!];[>END<]!$[FingerTextData FingerTextData]@#
 cps
 Ext:css
 caption-side: $[![(lis)block-end|block-start|bottom|inline-end|inline-start|top]!];[>END<]!$[FingerTextData FingerTextData]@#
-caretcolor
+caret-color
 Ext:css
 caret-color: $[![(lis)<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
 cl
@@ -367,13 +367,13 @@ clear: $[![(lis)both|inline-end|inline-start|left|none|right]!];[>END<]!$[Finger
 cp
 Ext:css
 clip: $[![(lis)auto|rect(<top>, <right>, <bottom>, <left>)]!];[>END<]!$[FingerTextData FingerTextData]@#
-clippath
+clip-path
 Ext:css
 clip-path: $[![(lis)<inset()>|<circle()>|<ellipse()>|<polygon()>|<shape-box>|fill-box|stroke-box|view-box|<url>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 c
 Ext:css
-color: $[![<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-coloradjust
+color: $[![(lis)<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
+color-adjust
 Ext:css
 color-adjust: $[![(lis)economy|exact]!];[>END<]!$[FingerTextData FingerTextData]@#
 colmc
@@ -390,7 +390,7 @@ Ext:css
 column-rule: $[![(lis)<column-rule-color>|<column-rule-style>|<column-rule-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
 colmrc
 Ext:css
-column-rule-color: $[![<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
+column-rule-color: $[![(lis)<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
 colmrs
 Ext:css
 column-rule-style: $[![<border-style>]!];[>END<]!$[FingerTextData FingerTextData]@#
@@ -429,7 +429,7 @@ Ext:css
 direction: $[![(lis)ltr|rtl]!];[>END<]!$[FingerTextData FingerTextData]@#
 d
 Ext:css
-display: $[![(lis)<display-outside>? && [ flow|flow-root ]? && list-item|block|inline|run-in|contents|none|flow|flow-root|table|flex|grid|ruby|inline-block|inline-list-item|inline-table|inline-flex|inline-grid|table-row-group|table-header-group|table-footer-group|table-row|table-cell|table-column-group|table-column|table-caption|ruby-base|ruby-text|ruby-base-container|ruby-text-container]!];[>END<]!$[FingerTextData FingerTextData]@#
+display: $[![(lis)<display-outside> <display-inside>|block|inline|run-in|contents|none|flow|flow-root|table|flex|grid|ruby|inline-block|inline-list-item|inline-table|inline-flex|inline-grid|table-row-group|table-header-group|table-footer-group|table-row|table-cell|table-column-group|table-column|table-caption|ruby-base|ruby-text|ruby-base-container|ruby-text-container]!];[>END<]!$[FingerTextData FingerTextData]@#
 ec
 Ext:css
 empty-cells: $[![(lis)hide|show]!];[>END<]!$[FingerTextData FingerTextData]@#
@@ -466,19 +466,19 @@ font: $[![(lis)<font-family>|<font-size>|<font-stretch>|<font-style>|<font-weigh
 ff
 Ext:css
 font-family: $[![(lis)<string>|<custom-ident>+|serif|sans-serif|cursive|fantasy|monospace]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontfeaturesettings
+font-feature-settings
 Ext:css
 font-feature-settings: $[![(lis)<string> [ <integer>|on|off ]?|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontkerning
+font-kerning
 Ext:css
 font-kerning: $[![(lis)auto|none|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontlanguageoverride
+font-language-override
 Ext:css
 font-language-override: $[![(lis)<string>|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontopticalsizing
+font-optical-sizing
 Ext:css
 font-optical-sizing: $[![(lis)auto|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontvariationsettings
+font-variation-settings
 Ext:css
 font-variation-settings: $[![(lis)<number>|<string>|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
 fz
@@ -489,32 +489,32 @@ Ext:css
 font-size-adjust: $[![(lis)<number>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 fst
 Ext:css
-font-stretch: $[![normal|ultra-condensed|extra-condensed|condensed|semi-condensed|semi-expanded|expanded|extra-expanded|ultra-expanded|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+font-stretch: $[![(lis)normal|ultra-condensed|extra-condensed|condensed|semi-condensed|semi-expanded|expanded|extra-expanded|ultra-expanded|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
 fs
 Ext:css
 font-style: $[![(lis)<angle>|italic|normal|oblique]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontsynthesis
+font-synthesis
 Ext:css
 font-synthesis: $[![(lis)none|style|weight]!];[>END<]!$[FingerTextData FingerTextData]@#
 fv
 Ext:css
-font-variant: $[![(lis)<custom-ident>|<custom-ident>|<custom-ident>|<custom-ident>|<custom-ident>|<custom-ident>|[ common-ligatures|no-common-ligatures ]|[ contextual|no-contextual ]|[ diagonal-fractions|stacked-fractions ]|[ discretionary-ligatures|no-discretionary-ligatures ]|[ full-width|proportional-width ]|[ historical-ligatures|no-historical-ligatures ]|[ jis78|jis83|jis90|jis04|simplified|traditional ]|[ lining-nums|oldstyle-nums ]|[ proportional-nums|tabular-nums ]|all-petite-caps|all-small-caps|annotation|character-variant|historical-forms|none|normal|ordinal|ornaments|petite-caps|ruby|slashed-zero|small-caps|styleset|stylistic|swash|titling-caps|unicase]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontvariantalternates
+font-variant: $[![(lis)normal|none|<font-variant-ligatures> <font-variant-alternates> <font-variant-caps> <font-variant-numeric> <font-variant-east-asian>]!];[>END<]!$[FingerTextData FingerTextData]@#
+font-variant-alternates
 Ext:css
-font-variant-alternates: $[![(lis)<custom-ident>|<custom-ident>|<custom-ident>|<custom-ident>|<custom-ident>|<custom-ident>|annotation|character-variant|historical-forms|normal|ornaments|styleset|stylistic|swash]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontvariantcaps
+font-variant-alternates: $[![(lis)normal|historical-forms|annotation()|character-variant()|ornaments()|styleset()|stylistic()|swash()]!];[>END<]!$[FingerTextData FingerTextData]@#
+font-variant-caps
 Ext:css
 font-variant-caps: $[![(lis)all-petite-caps|all-small-caps|normal|petite-caps|small-caps|titling-caps|unicase]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontvarianteastasian
+font-variant-eastasian
 Ext:css
-font-variant-east-asian: $[![(lis)[ full-width|proportional-width ]|[ jis78|jis83|jis90|jis04|simplified|traditional ]|normal|ruby]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontvariantligatures
+font-variant-east-asian: $[![(lis)[normal|ruby|full-width|proportional-width|jis78|jis83|jis90|jis04|simplified|traditional]!];[>END<]!$[FingerTextData FingerTextData]@#
+font-variant-ligatures
 Ext:css
-font-variant-ligatures: $[![(lis)[ common-ligatures|no-common-ligatures ]|[ contextual|no-contextual ]|[ discretionary-ligatures|no-discretionary-ligatures ]|[ historical-ligatures|no-historical-ligatures ]|none|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontvariantnumeric
+font-variant-ligatures: $[![(lis)normal|none|common-ligatures|no-common-ligatures|contextual|no-contextual|discretionary-ligatures|no-discretionary-ligatures|historical-ligatures|no-historical-ligatures]!];[>END<]!$[FingerTextData FingerTextData]@#
+font-variant-numeric
 Ext:css
-font-variant-numeric: $[![(lis)[ diagonal-fractions|stacked-fractions ]|[ lining-nums|oldstyle-nums ]|[ proportional-nums|tabular-nums ]|normal|ordinal|slashed-zero]!];[>END<]!$[FingerTextData FingerTextData]@#
-fontvariantposition
+font-variant-numeric: $[![(lis)normal|diagonal-fractions|stacked-fractions|lining-nums|oldstyle-nums|proportional-nums|tabular-nums |ordinal|slashed-zero]!];[>END<]!$[FingerTextData FingerTextData]@#
+font-variant-position
 Ext:css
 font-variant-position: $[![(lis)normal|sub|super]!];[>END<]!$[FingerTextData FingerTextData]@#
 fw
@@ -526,60 +526,58 @@ gap: $[![(lis)<column-gap>|<row-gap>]!];[>END<]!$[FingerTextData FingerTextData]
 grid
 Ext:css
 grid: $[![(lis)<grid-auto-columns>|<grid-auto-rows>|<grid-template-columns>|<grid-template-rows>|<grid-template>|auto-flow|auto-flow|dense|dense]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridarea
+grid-area
 Ext:css
-grid-area: $[![(lis)0|3|auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]|auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridautocolumns
+grid-area: $[![grid-row-start / grid-column-start / grid-row-end / grid-column-end,]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-auto-columns
 Ext:css
-grid-auto-columns: $[![<track-breadth>|minmax( <inflexible-breadth> , <track-breadth> )|fit-content( [ <length>|<percentage> ] )]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridautoflow
+grid-auto-columns: $[![(lis)<track-breadth>|minmax(<inflexible-breadth>, <track-breadth>)|fit-content(<length> ^ <percentage>)]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-auto-flow
 Ext:css
 grid-auto-flow: $[![(lis)column|dense|row]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridautorows
+grid-auto-rows
 Ext:css
-grid-auto-rows: $[![<track-breadth>|minmax( <inflexible-breadth> , <track-breadth> )|fit-content( [ <length>|<percentage> ] )]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridcolumn
+grid-auto-rows: $[![(lis)<track-breadth>|minmax(<inflexible-breadth>, <track-breadth>)|fit-content(<length> ^ <percentage>)]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-column
 Ext:css
-grid-column: $[![(lis)auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]|auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridcolumnend
+grid-column: $[![grid-column-start / grid-column-end]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-column-end
 Ext:css
-grid-column-end: $[![auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridcolumngap
+grid-column-end: $[![(lis)auto|<custom-ident>|<integer> && <custom-ident>?|span && [ <integer> ^ <custom-ident> ]]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-column-gap
 Ext:css
-grid-column-gap: $[![<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridcolumnstart
+grid-column-gap: $[![(lis)<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-column-start
 Ext:css
-grid-column-start: $[![auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridgap
+grid-column-start: $[![(lis)auto|<custom-ident>|<integer> && <custom-ident>?|span && [ <integer> ^ <custom-ident> ]]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-gap
 Ext:css
 grid-gap: $[![(lis)<grid-column-gap>|<grid-row-gap>]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridrow
+grid-row
 Ext:css
-grid-row: $[![(lis)auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]|auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridrowend
+grid-row: $[![ grid-row-start / grid-row-end]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-rowend
 Ext:css
-grid-row-end: $[![auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridrowgap
+grid-row-end: $[![(lis)auto|<custom-ident>|<integer> && <custom-ident>?|span && [ <integer> ^ <custom-ident> ]]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-rowgap
 Ext:css
-grid-row-gap: $[![<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridrowstart
+grid-row-gap: $[![(lis)<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-rowstart
 Ext:css
-grid-row-start: $[![auto|<custom-ident>|[ <integer> && <custom-ident>? ]|[ span && [ <integer> || <custom-ident> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridtemplate
+grid-row-start: $[![(lis)auto|<custom-ident>|<integer> && <custom-ident>?|span && [ <integer> ^ <custom-ident> ]]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-template
 Ext:css
-grid-template: $[![(lis)'[' <custom-ident>* ']'|'[' <custom-ident>* ']'|<grid-template-columns>|<grid-template-rows>|<string>|<track-breadth>|minmax( <inflexible-breadth> , <track-breadth> )|fit-content( [ <length>|<percentage> ] )|[ <line-names>? <track-size> ]+ <line-names>?|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridtemplateareas
+grid-template: $[![(lis)none|<grid-template-rows> / <grid-template-columns>|<line-names>? <string> <track-size>? <line-names>? / <explicit-track-list>?]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-template-areas
 Ext:css
 grid-template-areas: $[![(lis)<string>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridtemplatecolumns
+grid-template-columns
 Ext:css
-grid-template-columns: $[![(lis)[ <line-names>? [ <fixed-size>|<fixed-repeat> ] ]* <line-names>? <auto-repeat>
-[ <line-names>? [ <fixed-size>|<fixed-repeat> ] ]* <line-names>?|[ <line-names>? [ <track-size>|<track-repeat> ] ]+ <line-names>?|[ <line-names>|<name-repeat> ]+|none|subgrid]!];[>END<]!$[FingerTextData FingerTextData]@#
-gridtemplaterows
+grid-template-columns: $[![(lis)none|<track-list>|<auto-track-list>|subgrid <line-name-list>?]!];[>END<]!$[FingerTextData FingerTextData]@#
+grid-template-rows
 Ext:css
-grid-template-rows: $[![(lis)[ <line-names>? [ <fixed-size>|<fixed-repeat> ] ]* <line-names>? <auto-repeat>
-[ <line-names>? [ <fixed-size>|<fixed-repeat> ] ]* <line-names>?|[ <line-names>? [ <track-size>|<track-repeat> ] ]+ <line-names>?|[ <line-names>|<name-repeat> ]+|none|subgrid]!];[>END<]!$[FingerTextData FingerTextData]@#
-hangingpunctuation
+grid-template-rows: $[![(lis)none|<track-list>|<auto-track-list>|subgrid <line-name-list>?]!];[>END<]!$[FingerTextData FingerTextData]@#
+hanging-punctuation
 Ext:css
 hanging-punctuation: $[![(lis)allow-end|first|force-end|last|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 h
@@ -588,46 +586,46 @@ height: $[![(lis)<length>|<percentage>|auto|available|border-box|content-box|fit
 hyphens
 Ext:css
 hyphens: $[![(lis)auto|manual|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-imageorientation
+image-orientation
 Ext:css
 image-orientation: $[![(lis)<angle>|<angle>|flip|from-image]!];[>END<]!$[FingerTextData FingerTextData]@#
-imagerendering
+image-rendering
 Ext:css
 image-rendering: $[![(lis)auto|crisp-edges|pixelated]!];[>END<]!$[FingerTextData FingerTextData]@#
-imageresolution
+image-resolution
 Ext:css
 image-resolution: $[![(lis)<resolution>|from-image|snap]!];[>END<]!$[FingerTextData FingerTextData]@#
-imemode
+ime-mode
 Ext:css
 ime-mode: $[![(lis)active|auto|disabled|inactive|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-initialletter
+initial-letter
 Ext:css
 initial-letter: $[![(lis)<integer>|<number>|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-initialletteralign
+initial-letter-align
 Ext:css
 initial-letter-align: $[![(lis)alphabetic|auto|hanging|ideographic]!];[>END<]!$[FingerTextData FingerTextData]@#
-inlinesize
+inline-size
 Ext:css
 inline-size: $[![<width>]!];[>END<]!$[FingerTextData FingerTextData]@#
 inset
 Ext:css
 inset: $[![(lis)1|4|<top>]!];[>END<]!$[FingerTextData FingerTextData]@#
-insetblock
+inset-block
 Ext:css
 inset-block: $[![(lis)1|2|<top>]!];[>END<]!$[FingerTextData FingerTextData]@#
-insetblockend
+inset-block-end
 Ext:css
 inset-block-end: $[![<top>]!];[>END<]!$[FingerTextData FingerTextData]@#
-insetblockstart
+inset-block-start
 Ext:css
 inset-block-start: $[![<top>]!];[>END<]!$[FingerTextData FingerTextData]@#
-insetinline
+inset-inline
 Ext:css
 inset-inline: $[![(lis)1|2|<top>]!];[>END<]!$[FingerTextData FingerTextData]@#
-insetinlineend
+inset-inline-end
 Ext:css
 inset-inline-end: $[![<top>]!];[>END<]!$[FingerTextData FingerTextData]@#
-insetinlinestart
+inset-inline-start
 Ext:css
 inset-inline-start: $[![<top>]!];[>END<]!$[FingerTextData FingerTextData]@#
 isolation
@@ -636,28 +634,28 @@ isolation: $[![(lis)auto|isolate]!];[>END<]!$[FingerTextData FingerTextData]@#
 jc
 Ext:css
 justify-content: $[![(lis)center|start|end|flex-start|flex-end|left|normal|right|space-between|space-around|space-evenly|stretch|unsafe|safe]!];[>END<]!$[FingerTextData FingerTextData]@#
-justifyitems
+justify-items
 Ext:css
-justify-items: $[![(lis)[ first|last ]? baseline|center|center|start|end|self-start|self-end|flex-start|flex-end|left|left|legacy|legacy|normal|right|right|stretch|unsafe|safe]!];[>END<]!$[FingerTextData FingerTextData]@#
-justifyself
+justify-items: $[![(lis)first baseline|last baseline|center|start|end|self-start|self-end|flex-start|flex-end|left|legacy|normal|right|stretch|unsafe|safe]!];[>END<]!$[FingerTextData FingerTextData]@#
+justify-self
 Ext:css
-justify-self: $[![(lis)[ first|last ]? baseline|auto|center|start|end|self-start|self-end|flex-start|flex-end|left|normal|right|stretch|unsafe|safe]!];[>END<]!$[FingerTextData FingerTextData]@#
+justify-self: $[![(lis)first baseline|last baseline|center|start|end|self-start|self-end|flex-start|flex-end|left|legacy|normal|right|stretch|unsafe|safe]!];[>END<]!$[FingerTextData FingerTextData]@#
 l
 Ext:css
 left: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
 lts
 Ext:css
 letter-spacing: $[![(lis)<length>|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-linebreak
+line-break
 Ext:css
 line-break: $[![(lis)anywhere|auto|loose|normal|strict]!];[>END<]!$[FingerTextData FingerTextData]@#
-lineclamp
+line-clamp
 Ext:css
 line-clamp: $[![(lis)<integer>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 lh
 Ext:css
 line-height: $[![(lis)<length>|<number>|<percentage>|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-lineheightstep
+line-height-step
 Ext:css
 line-height-step: $[![<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
 lis
@@ -675,25 +673,25 @@ list-style-type: $[![(lis)<counter-style-name>|symbols()|<string>|none]!];[>END<
 m
 Ext:css
 margin: $[![(lis)1|4|<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-marginblock
+margin-block
 Ext:css
 margin-block: $[![(lis)1|2|<margin-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
-marginblockend
+margin-block-end
 Ext:css
 margin-block-end: $[![<margin-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
-marginblockstart
+margin-block-start
 Ext:css
 margin-block-start: $[![<margin-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
 mb
 Ext:css
 margin-bottom: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-margininline
+margin-inline
 Ext:css
 margin-inline: $[![(lis)1|2|<margin-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
-margininlineend
+margin-inline-end
 Ext:css
 margin-inline-end: $[![<margin-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
-margininlinestart
+margin-inline-start
 Ext:css
 margin-inline-start: $[![<margin-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
 ml
@@ -707,107 +705,107 @@ Ext:css
 margin-top: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
 mask
 Ext:css
-mask: $[![<mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || <geometry-box> || [ <geometry-box>|no-clip ] || <compositing-operator> || <masking-mode>]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskborder
+mask: $[![<mask-image> <mask-mode> <mask-repeat> <mask-position> <mask-clip> <mask-origin> <mask-size> <mask-composite>]!];[>END<]!$[FingerTextData FingerTextData]@#
+mask-border
 Ext:css
 mask-border: $[![(lis)<mask-border-mode>|<mask-border-outset>|<mask-border-repeat>|<mask-border-slice>|<mask-border-source>|<mask-border-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskbordermode
+mask-border-mode
 Ext:css
 mask-border-mode: $[![(lis)alpha|luminance]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskborderoutset
+mask-border-outset
 Ext:css
 mask-border-outset: $[![(lis)1|4|<length>|<number>]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskborderrepeat
+mask-border-repeat
 Ext:css
 mask-border-repeat: $[![(lis)1|2|repeat|round|space|stretch]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskborderslice
+mask-border-slice
 Ext:css
 mask-border-slice: $[![(lis)1|4|<number>|<percentage>|fill]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskbordersource
+mask-border-source
 Ext:css
 mask-border-source: $[![(lis)<url>|<image()>|<image-set()>|<element()>|<cross-fade()>|<gradient>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskborderwidth
+mask-border-width
 Ext:css
 mask-border-width: $[![(lis)1|4|<length>|<percentage>|<number>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
 maskclip
 Ext:css
 mask-clip: $[![(lis)<shape-box>|fill-box|stroke-box|view-box|no-clip]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskcomposite
+mask-composite
 Ext:css
-mask-composite: $[![add|subtract|intersect|exclude]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskimage
+mask-composite: $[![(lis)add|subtract|intersect|exclude]!];[>END<]!$[FingerTextData FingerTextData]@#
+mask-image
 Ext:css
-mask-image: $[![none|<image>|<mask-source>]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskmode
+mask-image: $[![(lis)none|<image>|<mask-source>]!];[>END<]!$[FingerTextData FingerTextData]@#
+mask-mode
 Ext:css
-mask-mode: $[![alpha|luminance|match-source]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskorigin
+mask-mode: $[![(lis)alpha|luminance|match-source]!];[>END<]!$[FingerTextData FingerTextData]@#
+mask-origin
 Ext:css
-mask-origin: $[![<shape-box>|fill-box|stroke-box|view-box]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskposition
+mask-origin: $[![(lis)<shape-box>|fill-box|stroke-box|view-box]!];[>END<]!$[FingerTextData FingerTextData]@#
+mask-position
 Ext:css
-mask-position: $[![[ [ left|center|right ] || [ top|center|bottom ]|[ left|center|right|<length-percentage> ] [ top|center|bottom|<length-percentage> ]?|[ [ left|right ] <length-percentage> ] && [ [ top|bottom ] <length-percentage> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-maskrepeat
+mask-position: $[![(lis)top|center|bottom|left|center|right|<length-percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+mask-repeat
 Ext:css
-mask-repeat: $[![repeat-x|repeat-y|[ repeat|space|round|no-repeat ]{1,2}]!];[>END<]!$[FingerTextData FingerTextData]@#
-masksize
+mask-repeat: $[![(lis)repeat-x|repeat-y|[repeat^space^round^no-repeat]{1,2}]!];[>END<]!$[FingerTextData FingerTextData]@#
+mask-size
 Ext:css
-mask-size: $[![[ <length-percentage>|auto ]{1,2}|cover|contain]!];[>END<]!$[FingerTextData FingerTextData]@#
-masktype
+mask-size: $[![(lis)[<length-percentage>^auto]{1,2}|cover|contain]!];[>END<]!$[FingerTextData FingerTextData]@#
+mask-type
 Ext:css
 mask-type: $[![(lis)alpha|luminance]!];[>END<]!$[FingerTextData FingerTextData]@#
-maxblocksize
+max-block-size
 Ext:css
 max-block-size: $[![<max-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
 mah
 Ext:css
 max-height: $[![(lis)<length>|<percentage>|fill-available|fit-content|max-content|min-content|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-maxinlinesize
+max-inline-size
 Ext:css
 max-inline-size: $[![<max-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
-maxlines
+max-lines
 Ext:css
 max-lines: $[![(lis)<integer>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 maw
 Ext:css
 max-width: $[![(lis)<length>|<percentage>|fill-available|fit-content|max-content|min-content|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-minblocksize
+min-block-size
 Ext:css
 min-block-size: $[![<min-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
 mih
 Ext:css
 min-height: $[![(lis)<length>|<percentage>|auto|fill-available|fit-content|max-content|min-content]!];[>END<]!$[FingerTextData FingerTextData]@#
-mininlinesize
+min-inline-size
 Ext:css
 min-inline-size: $[![<min-width>]!];[>END<]!$[FingerTextData FingerTextData]@#
 miw
 Ext:css
 min-width: $[![(lis)<length>|<percentage>|auto|fill-available|fit-content|max-content|min-content]!];[>END<]!$[FingerTextData FingerTextData]@#
-mixblendmode
+mix-blend-mode
 Ext:css
-mix-blend-mode: $[![normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|hard-light|soft-light|difference|exclusion|hue|saturation|color|luminosity]!];[>END<]!$[FingerTextData FingerTextData]@#
-objectfit
+mix-blend-mode: $[![(lis)normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|hard-light|soft-light|difference|exclusion|hue|saturation|color|luminosity]!];[>END<]!$[FingerTextData FingerTextData]@#
+object-fit
 Ext:css
 object-fit: $[![(lis)contain|cover|fill|none|scale-down]!];[>END<]!$[FingerTextData FingerTextData]@#
-objectposition
+object-position
 Ext:css
-object-position: $[![[ [ left|center|right ] || [ top|center|bottom ]|[ left|center|right|<length-percentage> ] [ top|center|bottom|<length-percentage> ]?|[ [ left|right ] <length-percentage> ] && [ [ top|bottom ] <length-percentage> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
+object-position: $[![(lis)top|center|bottom|left|center|right|<length-percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
 offset
 Ext:css
 offset: $[![(lis)<offset-anchor>|<offset-distance>|<offset-path>|<offset-position>|<offset-rotate>]!];[>END<]!$[FingerTextData FingerTextData]@#
-offsetanchor
+offset-anchor
 Ext:css
-offset-anchor: $[![(lis)[ [ left|center|right ] || [ top|center|bottom ]|[ left|center|right|<length-percentage> ] [ top|center|bottom|<length-percentage> ]?|[ [ left|right ] <length-percentage> ] && [ [ top|bottom ] <length-percentage> ] ]|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-offsetdistance
+offset-anchor: $[![(lis)top|center|bottom|left|center|right|<length-percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+offset-distance
 Ext:css
-offset-distance: $[![<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
-offsetpath
+offset-distance: $[![(lis)<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+offset-path
 Ext:css
 offset-path: $[![(lis)<angle>|<inset()>|<circle()>|<ellipse()>|<polygon()>|<path|<shape-box>|fill-box|stroke-box|view-box|<url>|closest-side|farthest-side|closest-corner|farthest-corner|<length>|<length-percentage>{2}|contain|none|ray]!];[>END<]!$[FingerTextData FingerTextData]@#
-offsetposition
+offset-position
 Ext:css
-offset-position: $[![(lis)[ [ left|center|right ] || [ top|center|bottom ]|[ left|center|right|<length-percentage> ] [ top|center|bottom|<length-percentage> ]?|[ [ left|right ] <length-percentage> ] && [ [ top|bottom ] <length-percentage> ] ]|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-offsetrotate
+offset-position: $[![(lis)top|center|bottom|left|center|right|<length-percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+offset-rotate
 Ext:css
 offset-rotate: $[![(lis)<angle>|auto|reverse]!];[>END<]!$[FingerTextData FingerTextData]@#
 op
@@ -833,23 +831,23 @@ Ext:css
 outline-style: $[![(lis)<border-style>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
 olw
 Ext:css
-outline-width: $[![<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
+outline-width: $[![(lis)<length>|thin|medium|thick]!];[>END<]!$[FingerTextData FingerTextData]@#
 ov
 Ext:css
 overflow: $[![(lis)1|2|auto|clip|hidden|scroll|visible]!];[>END<]!$[FingerTextData FingerTextData]@#
-overflowanchor
+overflow-anchor
 Ext:css
 overflow-anchor: $[![(lis)auto|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-overflowblock
+overflow-block
 Ext:css
 overflow-block: $[![(lis)auto|clip|hidden|scroll|visible]!];[>END<]!$[FingerTextData FingerTextData]@#
-overflowclipbox
+overflow-clipbox
 Ext:css
 overflow-clip-box: $[![(lis)content-box|padding-box]!];[>END<]!$[FingerTextData FingerTextData]@#
-overflowinline
+overflow-inline
 Ext:css
 overflow-inline: $[![(lis)auto|clip|hidden|scroll|visible]!];[>END<]!$[FingerTextData FingerTextData]@#
-overflowwrap
+overflow-wrap
 Ext:css
 overflow-wrap: $[![(lis)anywhere|break-word|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
 ovx
@@ -858,37 +856,37 @@ overflow-x: $[![(lis)auto|clip|hidden|scroll|visible]!];[>END<]!$[FingerTextData
 ovy
 Ext:css
 overflow-y: $[![(lis)auto|clip|hidden|scroll|visible]!];[>END<]!$[FingerTextData FingerTextData]@#
-overscrollbehavior
+overscroll-behavior
 Ext:css
 overscroll-behavior: $[![(lis)1|2|auto|contain|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-overscrollbehaviorx
+overscroll-behavior-x
 Ext:css
 overscroll-behavior-x: $[![(lis)auto|contain|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-overscrollbehaviory
+overscroll-behavior-y
 Ext:css
 overscroll-behavior-y: $[![(lis)auto|contain|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 p
 Ext:css
 padding: $[![(lis)1|4|<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
-paddingblock
+padding-block
 Ext:css
 padding-block: $[![(lis)1|2|<padding-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
-paddingblockend
+padding-block-end
 Ext:css
 padding-block-end: $[![<padding-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
-paddingblockstart
+padding-block-start
 Ext:css
 padding-block-start: $[![<padding-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
 pb
 Ext:css
 padding-bottom: $[![(lis)<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
-paddinginline
+padding-inline
 Ext:css
 padding-inline: $[![(lis)1|2|<padding-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
-paddinginlineend
+padding-inline-end
 Ext:css
 padding-inline-end: $[![<padding-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
-paddinginlinestart
+padding-inline-start
 Ext:css
 padding-inline-start: $[![<padding-left>]!];[>END<]!$[FingerTextData FingerTextData]@#
 pl
@@ -909,25 +907,25 @@ page-break-before: $[![(lis)always|auto|avoid|left|recto|right|verso]!];[>END<]!
 pgbi
 Ext:css
 page-break-inside: $[![(lis)auto|avoid]!];[>END<]!$[FingerTextData FingerTextData]@#
-paintorder
+paint-order
 Ext:css
 paint-order: $[![(lis)fill|markers|normal|stroke]!];[>END<]!$[FingerTextData FingerTextData]@#
 perspective
 Ext:css
 perspective: $[![(lis)<length>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-perspectiveorigin
+perspective-origin
 Ext:css
-perspective-origin: $[![[ [ left|center|right ] || [ top|center|bottom ]|[ left|center|right|<length-percentage> ] [ top|center|bottom|<length-percentage> ]?|[ [ left|right ] <length-percentage> ] && [ [ top|bottom ] <length-percentage> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-placecontent
+perspective-origin: $[![(lis)top|center|bottom|left|center|right|<length-percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+place-content
 Ext:css
 place-content: $[![(lis)<align-content>|<justify-content>]!];[>END<]!$[FingerTextData FingerTextData]@#
-placeitems
+place-items
 Ext:css
 place-items: $[![(lis)<align-items>|<justify-items>]!];[>END<]!$[FingerTextData FingerTextData]@#
-placeself
+place-self
 Ext:css
 place-self: $[![(lis)<align-self>|<justify-self>]!];[>END<]!$[FingerTextData FingerTextData]@#
-pointerevents
+pointer-events
 Ext:css
 pointer-events: $[![(lis)all|auto|fill|inherit|none|painted|stroke|visible|visibleFill|visiblePainted|visibleStroke]!];[>END<]!$[FingerTextData FingerTextData]@#
 pos
@@ -945,133 +943,133 @@ right: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTex
 rotate
 Ext:css
 rotate: $[![(lis)3|<angle>|<angle>|<number>|none|x|y|z]!];[>END<]!$[FingerTextData FingerTextData]@#
-rowgap
+row-gap
 Ext:css
 row-gap: $[![(lis)<length>|<percentage>|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-rubyalign
+ruby-align
 Ext:css
 ruby-align: $[![(lis)center|space-around|space-between|start]!];[>END<]!$[FingerTextData FingerTextData]@#
-rubymerge
+ruby-merge
 Ext:css
 ruby-merge: $[![(lis)auto|collapse|separate]!];[>END<]!$[FingerTextData FingerTextData]@#
-rubyposition
+ruby-position
 Ext:css
 ruby-position: $[![(lis)inter-character|over|under]!];[>END<]!$[FingerTextData FingerTextData]@#
 scale
 Ext:css
 scale: $[![(lis)1|3|<number>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollbarcolor
+scrollbar-color
 Ext:css
 scrollbar-color: $[![(lis)2|<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>|auto|dark|light]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollbarwidth
+scrollbar-width
 Ext:css
 scrollbar-width: $[![(lis)auto|none|thin]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollbehavior
+scroll-behavior
 Ext:css
 scroll-behavior: $[![(lis)auto|smooth]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmargin
+scroll-margin
 Ext:css
 scroll-margin: $[![(lis)1|4|<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmarginblock
+scroll-margin-block
 Ext:css
 scroll-margin-block: $[![(lis)1|2|<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmarginblockstart
+scroll-margin-block-start
 Ext:css
 scroll-margin-block-start: $[![<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmarginblockend
+scroll-margin-block-end
 Ext:css
 scroll-margin-block-end: $[![<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmarginbottom
+scroll-margin-bottom
 Ext:css
 scroll-margin-bottom: $[![<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmargininline
+scroll-margin-inline
 Ext:css
 scroll-margin-inline: $[![(lis)1|2|<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmargininlinestart
+scroll-margin-inline-start
 Ext:css
 scroll-margin-inline-start: $[![<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmargininlineend
+scroll-margin-inline-end
 Ext:css
 scroll-margin-inline-end: $[![<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmarginleft
+scroll-margin-left
 Ext:css
 scroll-margin-left: $[![<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmarginright
+scroll-margin-right
 Ext:css
 scroll-margin-right: $[![<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollmargintop
+scroll-margin-top
 Ext:css
 scroll-margin-top: $[![<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpadding
+scroll-padding
 Ext:css
 scroll-padding: $[![(lis)1|4|<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddingblock
+scroll-padding-block
 Ext:css
 scroll-padding-block: $[![(lis)1|2|<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddingblockstart
+scroll-padding-block-start
 Ext:css
 scroll-padding-block-start: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddingblockend
+scroll-padding-block-end
 Ext:css
 scroll-padding-block-end: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddingbottom
+scroll-padding-bottom
 Ext:css
 scroll-padding-bottom: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddinginline
+scroll-padding-inline
 Ext:css
 scroll-padding-inline: $[![(lis)1|2|<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddinginlinestart
+scroll-padding-inline-start
 Ext:css
 scroll-padding-inline-start: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddinginlineend
+scroll-padding-inline-end
 Ext:css
 scroll-padding-inline-end: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddingleft
+scroll-padding-left
 Ext:css
 scroll-padding-left: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddingright
+scroll-padding-right
 Ext:css
 scroll-padding-right: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollpaddingtop
+scroll-padding-top
 Ext:css
 scroll-padding-top: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollsnapalign
+scroll-snap-align
 Ext:css
 scroll-snap-align: $[![(lis)1|2|center|end|none|start]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollsnapcoordinate
+scroll-snap-coordinate
 Ext:css
-scroll-snap-coordinate: $[![(lis)[ [ left|center|right ] || [ top|center|bottom ]|[ left|center|right|<length-percentage> ] [ top|center|bottom|<length-percentage> ]?|[ [ left|right ] <length-percentage> ] && [ [ top|bottom ] <length-percentage> ] ]|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollsnapdestination
+scroll-snap-coordinate: $[![(lis)top|center|bottom|left|center|right|<length-percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+scroll-snap-destination
 Ext:css
-scroll-snap-destination: $[![[ [ left|center|right ] || [ top|center|bottom ]|[ left|center|right|<length-percentage> ] [ top|center|bottom|<length-percentage> ]?|[ [ left|right ] <length-percentage> ] && [ [ top|bottom ] <length-percentage> ] ]]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollsnappointsx
+scroll-snap-destination: $[![(lis)top|center|bottom|left|center|right|<length-percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+scroll-snap-points-x
 Ext:css
 scroll-snap-points-x: $[![(lis)<length>|<percentage>|none|repeat]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollsnappointsy
+scroll-snap-points-y
 Ext:css
 scroll-snap-points-y: $[![(lis)<length>|<percentage>|none|repeat]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollsnapstop
+scroll-snap-stop
 Ext:css
 scroll-snap-stop: $[![(lis)always|normal]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollsnaptype
+scroll-snap-type
 Ext:css
 scroll-snap-type: $[![(lis)block|both|inline|mandatory|none|proximity|x|y]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollsnaptypex
+scroll-snap-type-x
 Ext:css
 scroll-snap-type-x: $[![(lis)mandatory|none|proximity]!];[>END<]!$[FingerTextData FingerTextData]@#
-scrollsnaptypey
+scroll-snap-type-y
 Ext:css
 scroll-snap-type-y: $[![(lis)mandatory|none|proximity]!];[>END<]!$[FingerTextData FingerTextData]@#
-shapeimagethreshold
+shape-image-threshold
 Ext:css
 shape-image-threshold: $[![<number>]!];[>END<]!$[FingerTextData FingerTextData]@#
-shapemargin
+shape-margin
 Ext:css
-shape-margin: $[![<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
-shapeoutside
+shape-margin: $[![(lis)<length>|<percentage>]!];[>END<]!$[FingerTextData FingerTextData]@#
+shape-outside
 Ext:css
 shape-outside: $[![(lis)<box>|margin-box|<inset()>|<circle()>|<ellipse()>|<polygon()>|<url>|<image()>|<image-set()>|<element()>|<cross-fade()>|<gradient>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-tabsize
+tab-size
 Ext:css
 tab-size: $[![(lis)<integer>|<length>]!];[>END<]!$[FingerTextData FingerTextData]@#
 tbl
@@ -1083,37 +1081,37 @@ text-align: $[![(lis)center|end|justify|left|match-parent|right|start]!];[>END<]
 talst
 Ext:css
 text-align-last: $[![(lis)auto|center|end|justify|left|right|start]!];[>END<]!$[FingerTextData FingerTextData]@#
-textcombineupright
+text-combine-upright
 Ext:css
 text-combine-upright: $[![(lis)<integer>|all|digits|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 td
 Ext:css
 text-decoration: $[![(lis)<text-decoration-color>|<text-decoration-line>|<text-decoration-style>]!];[>END<]!$[FingerTextData FingerTextData]@#
-textdecorationcolor
+text-decoration-color
 Ext:css
-text-decoration-color: $[![<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-textdecorationline
+text-decoration-color: $[![(lis)<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
+text-decoration-line
 Ext:css
 text-decoration-line: $[![(lis)blink|line-through|none|overline|underline]!];[>END<]!$[FingerTextData FingerTextData]@#
-textdecorationskip
+text-decoration-skip
 Ext:css
 text-decoration-skip: $[![(lis)box-decoration|edges|leading-spaces|none|objects|spaces|trailing-spaces]!];[>END<]!$[FingerTextData FingerTextData]@#
-textdecorationskipink
+text-decoration-skipink
 Ext:css
 text-decoration-skip-ink: $[![(lis)auto|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-textdecorationstyle
+text-decoration-style
 Ext:css
 text-decoration-style: $[![(lis)dashed|dotted|double|solid|wavy]!];[>END<]!$[FingerTextData FingerTextData]@#
 te
 Ext:css
 text-emphasis: $[![(lis)<text-emphasis-color>|<text-emphasis-style>]!];[>END<]!$[FingerTextData FingerTextData]@#
-textemphasiscolor
+text-emphasis-color
 Ext:css
-text-emphasis-color: $[![<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
-textemphasisposition
+text-emphasis-color: $[![(lis)<rgb()>|<rgba()>|<hsl()>|<hsla()>|<hex-color>|<named-color>|currentcolor|<deprecated-system-color>]!];[>END<]!$[FingerTextData FingerTextData]@#
+text-emphasis-position
 Ext:css
 text-emphasis-position: $[![(lis)left|over|right|under]!];[>END<]!$[FingerTextData FingerTextData]@#
-textemphasisstyle
+text-emphasis-style
 Ext:css
 text-emphasis-style: $[![(lis)<string>|circle|dot|double-circle|filled|none|open|sesame|triangle]!];[>END<]!$[FingerTextData FingerTextData]@#
 ti
@@ -1122,37 +1120,37 @@ text-indent: $[![(lis)<length>|<percentage>|each-line|hanging]!];[>END<]!$[Finge
 tj
 Ext:css
 text-justify: $[![(lis)auto|inter-character|inter-word|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-textorientation
+text-orientation
 Ext:css
 text-orientation: $[![(lis)mixed|sideways|upright]!];[>END<]!$[FingerTextData FingerTextData]@#
 tov
 Ext:css
 text-overflow: $[![(lis)1|2|<string>|clip|ellipsis]!];[>END<]!$[FingerTextData FingerTextData]@#
-textrendering
+text-rendering
 Ext:css
 text-rendering: $[![(lis)auto|geometricPrecision|optimizeLegibility|optimizeSpeed]!];[>END<]!$[FingerTextData FingerTextData]@#
 tsh
 Ext:css
 text-shadow: $[![(lis)[ <length>{2,3} && <color>? ]|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-textsizeadjust
+text-size-adjust
 Ext:css
 text-size-adjust: $[![(lis)<percentage>|auto|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 tt
 Ext:css
 text-transform: $[![(lis)capitalize|full-size-kana|full-width|lowercase|none|uppercase]!];[>END<]!$[FingerTextData FingerTextData]@#
-textunderlineposition
+text-underline-position
 Ext:css
 text-underline-position: $[![(lis)auto|left|right|under]!];[>END<]!$[FingerTextData FingerTextData]@#
 t
 Ext:css
 top: $[![(lis)<length>|<percentage>|auto]!];[>END<]!$[FingerTextData FingerTextData]@#
-touchaction
+touch-action
 Ext:css
 touch-action: $[![(lis)auto|manipulation|none|pan-down|pan-left|pan-right|pan-up|pan-x|pan-y|pinch-zoom]!];[>END<]!$[FingerTextData FingerTextData]@#
 trf
 Ext:css
 transform: $[![(lis)<transform-function>+|none]!];[>END<]!$[FingerTextData FingerTextData]@#
-transformbox
+trfb
 Ext:css
 transform-box: $[![(lis)border-box|fill-box|view-box]!];[>END<]!$[FingerTextData FingerTextData]@#
 trfo
@@ -1163,7 +1161,7 @@ Ext:css
 transform-style: $[![(lis)flat|preserve-3d]!];[>END<]!$[FingerTextData FingerTextData]@#
 trs
 Ext:css
-transition: $[![[ none|<single-transition-property> ] || <time> || <timing-function> || <time>]!];[>END<]!$[FingerTextData FingerTextData]@#
+transition: $[![(lis)none|<single-transition-property>|<time> <timing-function> <time>]!];[>END<]!$[FingerTextData FingerTextData]@#
 trsde
 Ext:css
 transition-delay: $[![<time>]!];[>END<]!$[FingerTextData FingerTextData]@#
@@ -1175,7 +1173,7 @@ Ext:css
 transition-property: $[![(lis)all|<custom-ident>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
 trstf
 Ext:css
-transition-timing-function: $[![linear|<cubic-bezier-timing-function>|<step-timing-function>]!];[>END<]!$[FingerTextData FingerTextData]@#
+transition-timing-function: $[![(lis)linear|<cubic-bezier-timing-function>|<step-timing-function>]!];[>END<]!$[FingerTextData FingerTextData]@#
 translate
 Ext:css
 translate: $[![(lis)<length>|<length>|<percentage>|<length>|<percentage>|none]!];[>END<]!$[FingerTextData FingerTextData]@#
@@ -1431,7 +1429,7 @@ Ext:html
 <ins>$[![(key)SELECTION]!]$[0[]0]</ins>[>END<]!$[FingerTextData FingerTextData]@#
 input
 Ext:html
-<input type="$[![(lis)button|checkbox|color|date|datetime-local|email|file|hidden|image|month|number|password|radio|range|reset|search|submit|tel|text|time|url|week]!]" name="$[![]!]" id="$[![]!]" value="$[![]!]"$[![min="" max="" step="" ]!]$[![required ]!]$[![pattern="regex" ]!]$[![readonly ]!] />[>END<]
+<input type="$[![(lis)button|checkbox|color|date|datetime-local|email|file|hidden|image|month|number|password|radio|range|reset|search|submit|tel|text|time|url|week]!]" name="$[![]!]" id="$[![]!]" value="$[![]!]"$[![min="" max="" step="" ]!]$[![required ]!]$[![pattern="regex" ]!]$[![readonly ]!] />[>END<]!$[FingerTextData FingerTextData]@#
 img
 Ext:html
 <img src="$[0[]0]" alt="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#
@@ -1632,24 +1630,13 @@ Ext:html
 time
 Ext:html
 <time datetime="$[![]!]">$[![(key)SELECTION]!]$[0[]0]</time>[>END<]!$[FingerTextData FingerTextData]@#
-write
-Ext:js
-document.write("$[![<p>Hello World</p>]!]");[>END<]!$[FingerTextData FingerTextData]@#
-var
-Ext:js
-var $[![x]!] = $[![]!];[>END<]!$[FingerTextData FingerTextData]@#
 try
 Ext:js
 try {
 	$[![throw "myException";]!]
-}
-catch (e) {
-	$[![console.log(e);]!]
-}$[![
-catch (e if e instanceof RangeError) {
-	
-}]!]$[![
-finally {
+} catch (err) {
+	$[![console.log(err);]!]
+}$[![ finally {
 	
 }]!][>END<]!$[FingerTextData FingerTextData]@#
 switch
@@ -1661,36 +1648,15 @@ switch ($[![expression]!]) {
 	default:
 		$[0[]0];
 }[>END<]!$[FingerTextData FingerTextData]@#
-singleton
-Ext:js
-var $[![name]!] = (function() {
-	'use strict';
-	var instance;
-	$[![name]!] = function(${2:args})
-	{
-		if (instance)
-			return instance;
-		instance = this;
-		$[0[]0]
-	};
-	return $[![name]!];
-}());
-[>END<]!$[FingerTextData FingerTextData]@#
-setter
-Ext:js
-set $[![(key)SELECTION]!]$[![property]!]($[![value]!]) {
-	this._$[![(key)SELECTION]!]$[![property]!] = $[![value]!];$[0[]0]
-}[>END<]!$[FingerTextData FingerTextData]@#
 module
 Ext:js
-var $[![moduleName]!] = (function() {
-	'use strict';
-	var $[![moduleName]!] = {
-		init: {
-			$[0[]0]
-		}
+const $[![moduleName]!] = (function() {
+	function $[![method]!]() {
+		$[0[]0]
 	};
-	return $[![moduleName]!];
+	return {
+		$[![method]!]
+	};
 }());
 [>END<]!$[FingerTextData FingerTextData]@#
 log
@@ -1703,38 +1669,37 @@ Ext:js
  * @$[![constructor]!]
  * @param {$[![type]!]} $[![var]!] - $[![param descr]!]
  */[>END<]!$[FingerTextData FingerTextData]@#
-info
-Ext:js
-console.info($[![(key)SELECTION]!]$[0[]0]);[>END<]!$[FingerTextData FingerTextData]@#
 import
 Ext:js
-import $[![(opt)defaultExport|* as name|{ export }]!] from '$[![./path/to/file.js]!]';[>END<]!$[FingerTextData FingerTextData]@#
+import $[![(opt)defaultExport|* as name|{ exportName }]!] from '$[![./path/to/file.js]!]';[>END<]!$[FingerTextData FingerTextData]@#
+export
+Ext:js
+export $[![default ]!]$[![(opt)expression|{ exportName }|{ variable as exportName }]!];[>END<]!$[FingerTextData FingerTextData]@#
 ifelse
 Ext:js
-if($[![{condition}]!]) {
+if ($[![(key)SELECTION]!]$[![condition]!]) {
 	$[![]!]
 } else {
 	$[![]!]
-}
-[>END<]!$[FingerTextData FingerTextData]@#
+}[>END<]!$[FingerTextData FingerTextData]@#
 if
 Ext:js
-if($[![{condition}]!]) {
-	$[![]!]
-}
-[>END<]!$[FingerTextData FingerTextData]@#
+if ($[![(key)SELECTION]!]$[![condition]!]) {
+	$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
 gid
 Ext:js
-document.getElementById("$[![some_id]!]")$[![]!][>END<]!$[FingerTextData FingerTextData]@#
-getter
+document.getElementById("$[![id]!]")$[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+qs
 Ext:js
-get $[![(key)SELECTION]!]$[![property]!]() {
-	return this._$[![(key)SELECTION]!]$[![property]!];$[0[]0]
-}[>END<]!$[FingerTextData FingerTextData]@#
+document.querySelector("$[![selector]!]")$[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+qsa
+Ext:js
+document.querySelectorAll("$[![selector]!]")$[![.forEach((el) => {})]!][>END<]!$[FingerTextData FingerTextData]@#
 fun
 Ext:js
 function $[![function_name]!]($[![param]!]) {
-	$[![]!];
+	$[0[]0]
 }
 [>END<]!$[FingerTextData FingerTextData]@#
 forof
@@ -1742,53 +1707,27 @@ Ext:js
 for(let $[![o]!] of $[![Things]!]) {
 	$[0[]0]
 }[>END<]!$[FingerTextData FingerTextData]@#
-forim
-Ext:js
-for(let $[![i]!]=0, len=$[![Things]!].length; $[![i]!]<len; $[![i]!]++) {
-	$[![Things]!][$[![i]!]];$[0[]0]
-}[>END<]!$[FingerTextData FingerTextData]@#
 fori
 Ext:js
 for(let $[![prop]!] in $[![object]!]) {
 	if (Object.prototype.hasOwnProperty($[![object]!], $[![prop]!])) {
-		$[![object]!][$[![prop]!]];$[0[]0]
+		$[![object]!][$[![prop]!]]$[0[]0]
 	}
 }[>END<]!$[FingerTextData FingerTextData]@#
 for
 Ext:js
-for(let $[![i]!]=0; $[![i]!]<$[![Things]!].length; $[![i]!]++) {
+for(let $[![i]!]=0, len=$[![Things]!].length; $[![i]!] < len; $[![i]!]++) {
 	$[![Things]!][$[![i]!]];$[0[]0]
 }[>END<]!$[FingerTextData FingerTextData]@#
 eprev
 Ext:js
 $[![e]!].preventDefault();[>END<]!$[FingerTextData FingerTextData]@#
-constructor
-Ext:js
-var $[![ConstructorName]!] = (function() {
-	'use strict';
-	function $[![ConstructorName]!]($[![args]!])
-	{
-		// enforces new
-		if (!(this instanceof $[![ConstructorName]!]))
-			return new $[![ConstructorName]!]($[![args]!]);
-		
-		// constructor body
-		
-	}
-	$[![ConstructorName]!].prototype.$[![methodName]!] = function()
-	{
-		// method body
-		$[0[]0]
-	};
-	return $[![ConstructorName]!];
-}());
-[>END<]!$[FingerTextData FingerTextData]@#
 console
 Ext:js
 console.$[![(opt)log|info|warn|error|assert|trace|table|count|countReset|group|groupCollapsed|groupEnd|profile|profileEnd|time|timeEnd|timeLog|timeStamp]!]($[![(key)SELECTION]!]$[0[]0]);[>END<]!$[FingerTextData FingerTextData]@#
 class
 Ext:js
-$[![export default ]!]class $[![ClassName]!]$[![extends OtherClassName]!] {
+$[![export default ]!]class $[![ClassName]!]$[![ extends OtherClassName]!] {
 	constructor() {
 		$[0[]0]
 	}
@@ -1800,20 +1739,47 @@ $[![export default ]!]class $[![ClassName]!]$[![extends OtherClassName]!] {
 	set property(value) {
 		this._property = value;
 	}
-	method() {
+	
+	$[![method]!]() {
+		$[0[]0]
 	}
-}
-[>END<]!$[FingerTextData FingerTextData]@#
+}[>END<]!$[FingerTextData FingerTextData]@#
 alert
 Ext:js
-window.alert("$[![Hello World!]!]");[>END<]!$[FingerTextData FingerTextData]@#
+window.alert('$[![Hello World!]!]');[>END<]!$[FingerTextData FingerTextData]@#
 afun
 Ext:js
-;(function () {
-	'use strict';
+function($[![]!]) {
 	$[0[]0]
-}());
-[>END<]!$[FingerTextData FingerTextData]@#
+}[>END<]!$[FingerTextData FingerTextData]@#
+farr
+Ext:js
+($[![]!]) => {
+	$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+iife
+Ext:js
+;(function () {
+	$[0[]0]
+}());[>END<]!$[FingerTextData FingerTextData]@#
+promise
+Ext:js
+new Promise((resolve, reject) => {
+  $[0[]0]
+});[>END<]!$[FingerTextData FingerTextData]@#
+now
+Ext:js
+Date.now()[>END<]!$[FingerTextData FingerTextData]@#
+setTimeout
+Ext:js
+setTimeout(() => {
+	$[0[]0]
+}, $[![ms]!]);[>END<]!$[FingerTextData FingerTextData]@#
+okeys
+Ext:js
+Object.keys($[![obj]!]).forEach((key) => {
+	$[0[]0]
+});[>END<]!$[FingerTextData FingerTextData]@#
 xml
 Ext:xml
 <?xml version="1.0" encoding="UTF-8"?>$[0[]0][>END<]!$[FingerTextData FingerTextData]@#

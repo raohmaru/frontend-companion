@@ -181,7 +181,7 @@ Ext:html
 <ins>$[![(key)SELECTION]!]$[0[]0]</ins>[>END<]!$[FingerTextData FingerTextData]@#
 input
 Ext:html
-<input type="$[![(lis)button|checkbox|color|date|datetime-local|email|file|hidden|image|month|number|password|radio|range|reset|search|submit|tel|text|time|url|week]!]" name="$[![]!]" id="$[![]!]" value="$[![]!]"$[![min="" max="" step="" ]!]$[![required ]!]$[![pattern="regex" ]!]$[![readonly ]!] />[>END<]
+<input type="$[![(lis)button|checkbox|color|date|datetime-local|email|file|hidden|image|month|number|password|radio|range|reset|search|submit|tel|text|time|url|week]!]" name="$[![]!]" id="$[![]!]" value="$[![]!]"$[![min="" max="" step="" ]!]$[![required ]!]$[![pattern="regex" ]!]$[![readonly ]!] />[>END<]!$[FingerTextData FingerTextData]@#
 img
 Ext:html
 <img src="$[0[]0]" alt="$[0[]0]" />[>END<]!$[FingerTextData FingerTextData]@#

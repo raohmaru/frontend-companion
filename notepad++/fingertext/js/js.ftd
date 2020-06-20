@@ -1,21 +1,10 @@
-write
-Ext:js
-document.write("$[![<p>Hello World</p>]!]");[>END<]!$[FingerTextData FingerTextData]@#
-var
-Ext:js
-var $[![x]!] = $[![]!];[>END<]!$[FingerTextData FingerTextData]@#
 try
 Ext:js
 try {
 	$[![throw "myException";]!]
-}
-catch (e) {
-	$[![console.log(e);]!]
-}$[![
-catch (e if e instanceof RangeError) {
-	
-}]!]$[![
-finally {
+} catch (err) {
+	$[![console.log(err);]!]
+}$[![ finally {
 	
 }]!][>END<]!$[FingerTextData FingerTextData]@#
 switch
@@ -27,36 +16,15 @@ switch ($[![expression]!]) {
 	default:
 		$[0[]0];
 }[>END<]!$[FingerTextData FingerTextData]@#
-singleton
-Ext:js
-var $[![name]!] = (function() {
-	'use strict';
-	var instance;
-	$[![name]!] = function(${2:args})
-	{
-		if (instance)
-			return instance;
-		instance = this;
-		$[0[]0]
-	};
-	return $[![name]!];
-}());
-[>END<]!$[FingerTextData FingerTextData]@#
-setter
-Ext:js
-set $[![(key)SELECTION]!]$[![property]!]($[![value]!]) {
-	this._$[![(key)SELECTION]!]$[![property]!] = $[![value]!];$[0[]0]
-}[>END<]!$[FingerTextData FingerTextData]@#
 module
 Ext:js
-var $[![moduleName]!] = (function() {
-	'use strict';
-	var $[![moduleName]!] = {
-		init: {
-			$[0[]0]
-		}
+const $[![moduleName]!] = (function() {
+	function $[![method]!]() {
+		$[0[]0]
 	};
-	return $[![moduleName]!];
+	return {
+		$[![method]!]
+	};
 }());
 [>END<]!$[FingerTextData FingerTextData]@#
 log
@@ -69,38 +37,37 @@ Ext:js
  * @$[![constructor]!]
  * @param {$[![type]!]} $[![var]!] - $[![param descr]!]
  */[>END<]!$[FingerTextData FingerTextData]@#
-info
-Ext:js
-console.info($[![(key)SELECTION]!]$[0[]0]);[>END<]!$[FingerTextData FingerTextData]@#
 import
 Ext:js
-import $[![(opt)defaultExport|* as name|{ export }]!] from '$[![./path/to/file.js]!]';[>END<]!$[FingerTextData FingerTextData]@#
+import $[![(opt)defaultExport|* as name|{ exportName }]!] from '$[![./path/to/file.js]!]';[>END<]!$[FingerTextData FingerTextData]@#
+export
+Ext:js
+export $[![default ]!]$[![(opt)expression|{ exportName }|{ variable as exportName }]!];[>END<]!$[FingerTextData FingerTextData]@#
 ifelse
 Ext:js
-if($[![{condition}]!]) {
+if ($[![(key)SELECTION]!]$[![condition]!]) {
 	$[![]!]
 } else {
 	$[![]!]
-}
-[>END<]!$[FingerTextData FingerTextData]@#
+}[>END<]!$[FingerTextData FingerTextData]@#
 if
 Ext:js
-if($[![{condition}]!]) {
-	$[![]!]
-}
-[>END<]!$[FingerTextData FingerTextData]@#
+if ($[![(key)SELECTION]!]$[![condition]!]) {
+	$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
 gid
 Ext:js
-document.getElementById("$[![some_id]!]")$[![]!][>END<]!$[FingerTextData FingerTextData]@#
-getter
+document.getElementById("$[![id]!]")$[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+qs
 Ext:js
-get $[![(key)SELECTION]!]$[![property]!]() {
-	return this._$[![(key)SELECTION]!]$[![property]!];$[0[]0]
-}[>END<]!$[FingerTextData FingerTextData]@#
+document.querySelector("$[![selector]!]")$[0[]0][>END<]!$[FingerTextData FingerTextData]@#
+qsa
+Ext:js
+document.querySelectorAll("$[![selector]!]")$[![.forEach((el) => {})]!][>END<]!$[FingerTextData FingerTextData]@#
 fun
 Ext:js
 function $[![function_name]!]($[![param]!]) {
-	$[![]!];
+	$[0[]0]
 }
 [>END<]!$[FingerTextData FingerTextData]@#
 forof
@@ -108,53 +75,27 @@ Ext:js
 for(let $[![o]!] of $[![Things]!]) {
 	$[0[]0]
 }[>END<]!$[FingerTextData FingerTextData]@#
-forim
-Ext:js
-for(let $[![i]!]=0, len=$[![Things]!].length; $[![i]!]<len; $[![i]!]++) {
-	$[![Things]!][$[![i]!]];$[0[]0]
-}[>END<]!$[FingerTextData FingerTextData]@#
 fori
 Ext:js
 for(let $[![prop]!] in $[![object]!]) {
 	if (Object.prototype.hasOwnProperty($[![object]!], $[![prop]!])) {
-		$[![object]!][$[![prop]!]];$[0[]0]
+		$[![object]!][$[![prop]!]]$[0[]0]
 	}
 }[>END<]!$[FingerTextData FingerTextData]@#
 for
 Ext:js
-for(let $[![i]!]=0; $[![i]!]<$[![Things]!].length; $[![i]!]++) {
+for(let $[![i]!]=0, len=$[![Things]!].length; $[![i]!] < len; $[![i]!]++) {
 	$[![Things]!][$[![i]!]];$[0[]0]
 }[>END<]!$[FingerTextData FingerTextData]@#
 eprev
 Ext:js
 $[![e]!].preventDefault();[>END<]!$[FingerTextData FingerTextData]@#
-constructor
-Ext:js
-var $[![ConstructorName]!] = (function() {
-	'use strict';
-	function $[![ConstructorName]!]($[![args]!])
-	{
-		// enforces new
-		if (!(this instanceof $[![ConstructorName]!]))
-			return new $[![ConstructorName]!]($[![args]!]);
-		
-		// constructor body
-		
-	}
-	$[![ConstructorName]!].prototype.$[![methodName]!] = function()
-	{
-		// method body
-		$[0[]0]
-	};
-	return $[![ConstructorName]!];
-}());
-[>END<]!$[FingerTextData FingerTextData]@#
 console
 Ext:js
 console.$[![(opt)log|info|warn|error|assert|trace|table|count|countReset|group|groupCollapsed|groupEnd|profile|profileEnd|time|timeEnd|timeLog|timeStamp]!]($[![(key)SELECTION]!]$[0[]0]);[>END<]!$[FingerTextData FingerTextData]@#
 class
 Ext:js
-$[![export default ]!]class $[![ClassName]!]$[![extends OtherClassName]!] {
+$[![export default ]!]class $[![ClassName]!]$[![ extends OtherClassName]!] {
 	constructor() {
 		$[0[]0]
 	}
@@ -166,17 +107,44 @@ $[![export default ]!]class $[![ClassName]!]$[![extends OtherClassName]!] {
 	set property(value) {
 		this._property = value;
 	}
-	method() {
+	
+	$[![method]!]() {
+		$[0[]0]
 	}
-}
-[>END<]!$[FingerTextData FingerTextData]@#
+}[>END<]!$[FingerTextData FingerTextData]@#
 alert
 Ext:js
-window.alert("$[![Hello World!]!]");[>END<]!$[FingerTextData FingerTextData]@#
+window.alert('$[![Hello World!]!]');[>END<]!$[FingerTextData FingerTextData]@#
 afun
 Ext:js
-;(function () {
-	'use strict';
+function($[![]!]) {
 	$[0[]0]
-}());
-[>END<]!$[FingerTextData FingerTextData]@#
+}[>END<]!$[FingerTextData FingerTextData]@#
+farr
+Ext:js
+($[![]!]) => {
+	$[0[]0]
+}[>END<]!$[FingerTextData FingerTextData]@#
+iife
+Ext:js
+;(function () {
+	$[0[]0]
+}());[>END<]!$[FingerTextData FingerTextData]@#
+promise
+Ext:js
+new Promise((resolve, reject) => {
+  $[0[]0]
+});[>END<]!$[FingerTextData FingerTextData]@#
+now
+Ext:js
+Date.now()[>END<]!$[FingerTextData FingerTextData]@#
+setTimeout
+Ext:js
+setTimeout(() => {
+	$[0[]0]
+}, $[![ms]!]);[>END<]!$[FingerTextData FingerTextData]@#
+okeys
+Ext:js
+Object.keys($[![obj]!]).forEach((key) => {
+	$[0[]0]
+});[>END<]!$[FingerTextData FingerTextData]@#
