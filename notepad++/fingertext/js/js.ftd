@@ -84,7 +84,7 @@ for(let $[![prop]!] in $[![object]!]) {
 }[>END<]!$[FingerTextData FingerTextData]@#
 for
 Ext:js
-for(let $[![i]!]=0, len=$[![Things]!].length; $[![i]!] < len; $[![i]!]++) {
+for(let $[![i]!] = 0, len = $[![Things]!].length; $[![i]!] < len; $[![i]!]++) {
 	$[![Things]!][$[![i]!]];$[0[]0]
 }[>END<]!$[FingerTextData FingerTextData]@#
 eprev
