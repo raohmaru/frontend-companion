@@ -42,7 +42,7 @@ Start a simple HTTP Server with Python:
 `git shortlog -s -n`
 
 **Change file write permissions**  
-`git ls-files --stage`
+`git ls-files --stage`  
 `git update-index --chmod=+x filename`
 
 ------------------
